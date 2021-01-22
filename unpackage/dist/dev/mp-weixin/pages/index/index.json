@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "index-list": "/components/index/index_list",
+    "swiper-tab-head": "/components/index/swiper_tab_header"
+  }
 }

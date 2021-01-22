@@ -1,50 +1,195 @@
 <template>
 	<view>
-		<block v-for="(item, index) in list" :key="index">
-			<view class="index_list">
-				<view class="header_container u_f_ac u_f_jsb">
-					<view class="u_f_ac header_user_info">
-						<image :src="item.userPic" mode="widthFix" lazy-load></image>
-						{{item.userName}}
-					</view>
-					<view class="u_f_ac iconfont iconjia header_user_follow" v-if="item.isFollow">关注</view>
-				</view>
-				<view class="title_container">
-					{{item.title}}
-				</view>
-				<view class="image_container u_f_ajc">
-					<!-- 图片 -->
-					<image :src="item.title_pic" mode="widthFix" lazy-load></image>
-					<!-- 视频 -->
-					<block v-if="item.type == 'video'">
-						<view class="iconfont iconbofang"></view>
-						<view class="play_count">{{item.playNum}} 次播放 {{item.long}}</view>
-					</block>
-				</view>
-				<view class="info_container u_f_ac u_f_jsb">
-					<view class="u_f_ac info_left">
-						<view class="iconfont iconxiaolian1">{{item.infoNum.dingNum}}</view>
-						<view class="iconfont icon_kulian">{{item.infoNum.caiNum}}</view>
-					</view>
-					<view class="u_f_ac info_right">
-						<view class="iconfont iconpinglun">{{item.commentNum}}</view>
-						<view class="iconfont iconzhuanfa">{{item.shareNum}}</view>
-					</view>
-				</view>
-			</view>
-		</block>
+		<swiperTabHead :tabBars="tabBars" :tabIndex="tabIndex" @tabtap="tabtap"></swiperTabHead>
+		<view class="uni-tab-bar">
+			<swiper class="swiper-box" :style="{height: swiperHeight + 'px'}"
+			 :current="tabIndex" @change="tabChange">
+				<swiper-item v-for="(items, index) in newsList" :key="index">
+					<scroll-view scroll-y class="list" @scrolltolower="loadMore(index)">
+						<!-- 图文列表 -->
+						<block v-for="(item, index1) in items.list" :key="index1">
+							<indexList :item="item" :index="index1"></indexList>
+						</block>
+						<!-- 上拉加载 -->
+						<view class="load_more">{{items.loadText}}</view>
+					</scroll-view>
+				</swiper-item>
+			</swiper>
+		</view>
 	</view>
 </template>
 
 <script>
+	import indexList from '@/components/index/index_list.vue';
+	import swiperTabHead from '@/components/index/swiper_tab_header.vue';
 	export default {
+		components:{indexList, swiperTabHead},
 		data() {
 			return {
-				list: [
-					{
+				swiperHeight: 0,
+				tabIndex: 0,
+				newsList: [
+					{	loadText: '上拉加载更多',
+						list: [
+							{
+								userPic: '../../static/demo/userpic/12.jpg',
+								userName: '昵称',
+								isFollow: true,
+								title: '我是标题',
+								type: 'img', // img： 图文， video: 视频 
+								title_pic: '../../static/demo/datapic/11.jpg',
+								infoNum: {
+									index: 0, // 0: 无操作， 1：顶， ２： 踩
+									dingNum: 10,
+									caiNum: 10,
+								},
+								commentNum: 10,
+								shareNum: 10,
+							},
+							{
+								userPic: '../../static/demo/userpic/12.jpg',
+								userName: '昵称',
+								isFollow: false,
+								title: '我是标题',
+								type: 'video', // img： 图文， video: 视频 
+								playNum: '20w',
+								long: '2:47',
+								title_pic: '../../static/demo/datapic/11.jpg',
+								infoNum: {
+									index: 1, // 0: 无操作， 1：顶， ２： 踩
+									dingNum: 10,
+									caiNum: 10,
+								},
+								commentNum: 10,
+								shareNum: 10,
+							}
+						]
+					},
+					{	loadText: '上拉加载更多',
+						list: [
+							{
+								userPic: '../../static/demo/userpic/12.jpg',
+								userName: '昵称',
+								isFollow: true,
+								title: '我是标题',
+								type: 'img', // img： 图文， video: 视频 
+								title_pic: '../../static/demo/datapic/11.jpg',
+								infoNum: {
+									index: 0, // 0: 无操作， 1：顶， ２： 踩
+									dingNum: 10,
+									caiNum: 10,
+								},
+								commentNum: 10,
+								shareNum: 10,
+							}
+						]
+					},
+					{	loadText: '上拉加载更多',
+						list: [
+							{
+								userPic: '../../static/demo/userpic/12.jpg',
+								userName: '昵称',
+								isFollow: true,
+								title: '我是标题',
+								type: 'img', // img： 图文， video: 视频 
+								title_pic: '../../static/demo/datapic/11.jpg',
+								infoNum: {
+									index: 0, // 0: 无操作， 1：顶， ２： 踩
+									dingNum: 10,
+									caiNum: 10,
+								},
+								commentNum: 10,
+								shareNum: 10,
+							}
+						]
+					},
+					{	loadText: '上拉加载更多',
+						list: [
+							{
+								userPic: '../../static/demo/userpic/12.jpg',
+								userName: '昵称',
+								isFollow: true,
+								title: '我是标题',
+								type: 'img', // img： 图文， video: 视频 
+								title_pic: '../../static/demo/datapic/11.jpg',
+								infoNum: {
+									index: 0, // 0: 无操作， 1：顶， ２： 踩
+									dingNum: 10,
+									caiNum: 10,
+								},
+								commentNum: 10,
+								shareNum: 10,
+							}
+						]
+					},
+					{	loadText: '上拉加载更多',
+						list: [
+							{
+								userPic: '../../static/demo/userpic/12.jpg',
+								userName: '昵称',
+								isFollow: true,
+								title: '我是标题',
+								type: 'img', // img： 图文， video: 视频 
+								title_pic: '../../static/demo/datapic/11.jpg',
+								infoNum: {
+									index: 0, // 0: 无操作， 1：顶， ２： 踩
+									dingNum: 10,
+									caiNum: 10,
+								},
+								commentNum: 10,
+								shareNum: 10,
+							}
+						]
+					},
+					{	loadText: '上拉加载更多',
+						list: [
+							{
+								userPic: '../../static/demo/userpic/12.jpg',
+								userName: '昵称',
+								isFollow: true,
+								title: '我是标题',
+								type: 'img', // img： 图文， video: 视频 
+								title_pic: '../../static/demo/datapic/11.jpg',
+								infoNum: {
+									index: 0, // 0: 无操作， 1：顶， ２： 踩
+									dingNum: 10,
+									caiNum: 10,
+								},
+								commentNum: 10,
+								shareNum: 10,
+							}
+						]
+					}
+				],
+				tabBars: [
+					{name: '关注', id: 0},
+					{name: '推荐', id: 1},
+					{name: '体育', id: 2},
+					{name: '热点', id: 3},
+					{name: '财经', id: 4},
+					{name: '娱乐', id: 5},
+				],
+			}
+		},
+		onLoad() {
+			uni.getSystemInfo({
+			    success:(res) => {
+					let height = res.windowHeight - uni.upx2px(100) // 视口高度-顶部导航高度
+					this.swiperHeight = height
+			    }
+			});
+		},
+		methods: {
+			loadMore(index) {
+				if(this.newsList[index].loadText != '上拉加载更多') {
+					return;
+				}
+				this.newsList[index].loadText = '加载中...'
+				setTimeout(() => {
+					let obj = {
 						userPic: '../../static/demo/userpic/12.jpg',
 						userName: '昵称',
-						isFollow: false,
+						isFollow: true,
 						title: '我是标题',
 						type: 'img', // img： 图文， video: 视频 
 						title_pic: '../../static/demo/datapic/11.jpg',
@@ -55,91 +200,27 @@
 						},
 						commentNum: 10,
 						shareNum: 10,
-					},
-					{
-						userPic: '../../static/demo/userpic/12.jpg',
-						userName: '昵称',
-						isFollow: false,
-						title: '我是标题',
-						type: 'video', // img： 图文， video: 视频 
-						playNum: '20w',
-						long: '2:47',
-						title_pic: '../../static/demo/datapic/11.jpg',
-						infoNum: {
-							index: 0, // 0: 无操作， 1：顶， ２： 踩
-							dingNum: 10,
-							caiNum: 10,
-						},
-						commentNum: 10,
-						shareNum: 10,
 					}
-				]
+					this.newsList[index].list.push(obj)
+					this.newsList[index].loadText = '上拉加载更多'
+				}, 1000)
+			},
+			tabtap(index) {
+				this.tabIndex = index
+			},
+			// 滑动事件
+			tabChange(e) {
+				this.tabIndex = e.detail.current
 			}
-		},
-		onLoad() {
-
-		},
-		methods: {
-
 		}
 	}
 </script>
 
 
 <style lang="less">
-	.index_list {
-		padding: 20upx;
-		border-bottom: 1upx solid #eee;
-	}
-	.header_container {
-		.header_user_info {
-			color: #999;
-			image {
-				width: 85upx;
-				height: 85upx;
-				border-radius: 100%;
-				margin: 0 10upx 0 0;
-			}
-		}
-		.header_user_follow{
-			background-color: #f5f2f5;
-			border-radius: 5upx;
-			padding: 0 10upx;
-		}
-	}
-	.title_container {
-		padding: 15upx;
-		font-size: 32upx;
-	}
-	.image_container {
-		position: relative;
-		padding: 15upx;
-		color: #fff;
-		image {
-			width: 100%;
-			border-radius: 20upx;
-		}
-		.iconbofang {
-			position: absolute;
-			font-size: 140upx;
-		}
-		.play_count {
-			position: absolute;
-			background: rgba(51, 51, 51, 0.72);
-			bottom: 20upx;
-			right: 20upx;
-			border-radius: 40upx;
-			font-size: 25upx;
-			padding: 0 10upx;
-		}
-	}
-	.info_container {
-		padding: 15upx 0;
-		color: #999;
-		.info_left, .info_right {
-			view {
-				margin: 0 10upx;
-			}
-		}
+	.load_more {
+		text-align: center;
+		color: #aaa;
+		padding: 10upx;
 	}
 </style>

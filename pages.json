@@ -5,6 +5,7 @@
 			"style": {
 				"app-plus": {
 					"scrollIndicator": "none",
+					"bounce":"none", //关闭反弹效果
 					"titleNView": {
 						// 搜索框
 						"searchInput": {
