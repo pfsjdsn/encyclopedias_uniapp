@@ -1,0 +1,13 @@
+/* flex样式 */
+	.u_f, .u_f_ac, .u_f_ajc, .u_f_jsb {
+		display: flex;
+	}
+	.u_f_ac,.u_f_ajc {
+		align-items: center;
+	}
+	.u_f_ajc {
+		justify-content: center;
+	}
+	.u_f_jsb {
+		justify-content: space-between;
+	}
