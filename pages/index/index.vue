@@ -11,7 +11,7 @@
 							<indexList :item="item" :index="index1"></indexList>
 						</block>
 						<!-- 上拉加载 -->
-						<view class="load_more">{{items.loadText}}</view>
+						<loadMore :loadText="items.loadText"></loadMore>
 					</scroll-view>
 				</swiper-item>
 			</swiper>
@@ -22,8 +22,9 @@
 <script>
 	import indexList from '@/components/index/index_list.vue';
 	import swiperTabHead from '@/components/index/swiper_tab_header.vue';
+	import loadMore from '@/components/common/load_more.vue';
 	export default {
-		components:{indexList, swiperTabHead},
+		components:{indexList, swiperTabHead, loadMore},
 		data() {
 			return {
 				swiperHeight: 0,
@@ -218,9 +219,5 @@
 
 
 <style lang="less">
-	.load_more {
-		text-align: center;
-		color: #aaa;
-		padding: 10upx;
-	}
+
 </style>

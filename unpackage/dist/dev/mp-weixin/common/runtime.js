@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/index/index_list":1,"components/index/swiper_tab_header":1};
+/******/ 		var cssChunks = {"components/common/load_more":1,"components/index/index_list":1,"components/index/swiper_tab_header":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/index/index_list":"components/index/index_list","components/index/swiper_tab_header":"components/index/swiper_tab_header"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/common/load_more":"components/common/load_more","components/index/index_list":"components/index/index_list","components/index/swiper_tab_header":"components/index/swiper_tab_header"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
