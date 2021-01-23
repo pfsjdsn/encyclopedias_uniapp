@@ -133,7 +133,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var indexList = function indexList() {__webpack_require__.e(/*! require.ensure | components/index/index_list */ "components/index/index_list").then((function () {return resolve(__webpack_require__(/*! @/components/index/index_list.vue */ 41));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var swiperTabHead = function swiperTabHead() {__webpack_require__.e(/*! require.ensure | components/index/swiper_tab_header */ "components/index/swiper_tab_header").then((function () {return resolve(__webpack_require__(/*! @/components/index/swiper_tab_header.vue */ 48));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 55));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var noThing = function noThing() {__webpack_require__.e(/*! require.ensure | components/common/no_thing */ "components/common/no_thing").then((function () {return resolve(__webpack_require__(/*! @/components/common/no_thing.vue */ 62));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var indexList = function indexList() {__webpack_require__.e(/*! require.ensure | components/index/index_list */ "components/index/index_list").then((function () {return resolve(__webpack_require__(/*! @/components/index/index_list.vue */ 49));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var swiperTabHead = function swiperTabHead() {__webpack_require__.e(/*! require.ensure | components/index/swiper_tab_header */ "components/index/swiper_tab_header").then((function () {return resolve(__webpack_require__(/*! @/components/index/swiper_tab_header.vue */ 56));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 63));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var noThing = function noThing() {__webpack_require__.e(/*! require.ensure | components/common/no_thing */ "components/common/no_thing").then((function () {return resolve(__webpack_require__(/*! @/components/common/no_thing.vue */ 70));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -306,7 +306,7 @@ __webpack_require__.r(__webpack_exports__);
 
   },
   // 监听原生标题栏按钮点击事件
-  onNavigationBarButtonTap: function onNavigationBarButtonTap() {
+  onNavigationBarButtonTap: function onNavigationBarButtonTap(e) {
     switch (e.index) {
       case 1:
         // 打开发布页面

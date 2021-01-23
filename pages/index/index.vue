@@ -171,7 +171,7 @@
 			});
 		},
 		// 监听原生标题栏按钮点击事件
-		onNavigationBarButtonTap() {
+		onNavigationBarButtonTap(e) {
 			switch (e.index){
 				case 1:
 				// 打开发布页面

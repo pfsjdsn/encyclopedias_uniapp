@@ -23,8 +23,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "search",
-          "pathName": "pages/search/search",
+          "name": "publish",
+          "pathName": "pages/publish/publish",
           "scene": null
         }
       ]

@@ -143,7 +143,7 @@ var _default =
   },
   // 监听原生标题栏按钮点击事件
   // 点击取消，返回上一个页面
-  onNavigationBarButtonTap: function onNavigationBarButtonTap() {
+  onNavigationBarButtonTap: function onNavigationBarButtonTap(e) {
     if (e.index == 0) {
       uni.navigateBack({
         delta: 1 });
