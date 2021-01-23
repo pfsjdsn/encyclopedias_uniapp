@@ -6,12 +6,17 @@
 			 :current="tabIndex" @change="tabChange">
 				<swiper-item v-for="(items, index) in newsList" :key="index">
 					<scroll-view scroll-y class="list" @scrolltolower="loadMore(index)">
-						<!-- 图文列表 -->
-						<block v-for="(item, index1) in items.list" :key="index1">
-							<indexList :item="item" :index="index1"></indexList>
-						</block>
-						<!-- 上拉加载 -->
-						<loadMore :loadText="items.loadText"></loadMore>
+						<template v-if="items.list.length">
+							<!-- 图文列表 -->
+							<block v-for="(item, index1) in items.list" :key="index1">
+								<indexList :item="item" :index="index1"></indexList>
+							</block>
+							<!-- 上拉加载 -->
+							<loadMore :loadText="items.loadText"></loadMore>
+						</template>
+						<template v-else>
+							<noThing></noThing>
+						</template>
 					</scroll-view>
 				</swiper-item>
 			</swiper>
@@ -23,8 +28,9 @@
 	import indexList from '@/components/index/index_list.vue';
 	import swiperTabHead from '@/components/index/swiper_tab_header.vue';
 	import loadMore from '@/components/common/load_more.vue';
+	import noThing from '@/components/common/no_thing.vue';
 	export default {
-		components:{indexList, swiperTabHead, loadMore},
+		components:{indexList, swiperTabHead, loadMore, noThing},
 		data() {
 			return {
 				swiperHeight: 0,
@@ -40,7 +46,7 @@
 								type: 'img', // img： 图文， video: 视频 
 								title_pic: '../../static/demo/datapic/11.jpg',
 								infoNum: {
-									index: 0, // 0: 无操作， 1：顶， ２： 踩
+									index: 1, // 0: 无操作， 1：顶， ２： 踩
 									dingNum: 10,
 									caiNum: 10,
 								},
@@ -55,6 +61,25 @@
 								type: 'video', // img： 图文， video: 视频 
 								playNum: '20w',
 								long: '2:47',
+								title_pic: '../../static/demo/datapic/11.jpg',
+								infoNum: {
+									index: 1, // 0: 无操作， 1：顶， ２： 踩
+									dingNum: 10,
+									caiNum: 10,
+								},
+								commentNum: 10,
+								shareNum: 10,
+							}
+						]
+					},
+					{	loadText: '上拉加载更多',
+						list: [
+							{
+								userPic: '../../static/demo/userpic/12.jpg',
+								userName: '昵称',
+								isFollow: true,
+								title: '我是标题',
+								type: 'img', // img： 图文， video: 视频 
 								title_pic: '../../static/demo/datapic/11.jpg',
 								infoNum: {
 									index: 1, // 0: 无操作， 1：顶， ２： 踩
@@ -124,42 +149,7 @@
 						]
 					},
 					{	loadText: '上拉加载更多',
-						list: [
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '昵称',
-								isFollow: true,
-								title: '我是标题',
-								type: 'img', // img： 图文， video: 视频 
-								title_pic: '../../static/demo/datapic/11.jpg',
-								infoNum: {
-									index: 0, // 0: 无操作， 1：顶， ２： 踩
-									dingNum: 10,
-									caiNum: 10,
-								},
-								commentNum: 10,
-								shareNum: 10,
-							}
-						]
-					},
-					{	loadText: '上拉加载更多',
-						list: [
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '昵称',
-								isFollow: true,
-								title: '我是标题',
-								type: 'img', // img： 图文， video: 视频 
-								title_pic: '../../static/demo/datapic/11.jpg',
-								infoNum: {
-									index: 0, // 0: 无操作， 1：顶， ２： 踩
-									dingNum: 10,
-									caiNum: 10,
-								},
-								commentNum: 10,
-								shareNum: 10,
-							}
-						]
+						list: []
 					}
 				],
 				tabBars: [
@@ -179,6 +169,23 @@
 					this.swiperHeight = height
 			    }
 			});
+		},
+		// 监听原生标题栏按钮点击事件
+		onNavigationBarButtonTap() {
+			switch (e.index){
+				case 1:
+				// 打开发布页面
+				uni.navigateTo({
+					url: '../publish/publish'
+				})
+					break;
+			}
+		},
+		// 监听搜索框点击事件
+		onNavigationBarSearchInputClicked() {
+			uni.navigateTo({
+				url:'../search/search'
+			})
 		},
 		methods: {
 			loadMore(index) {

@@ -2,6 +2,7 @@
   "usingComponents": {
     "index-list": "/components/index/index_list",
     "swiper-tab-head": "/components/index/swiper_tab_header",
-    "load-more": "/components/common/load_more"
+    "load-more": "/components/common/load_more",
+    "no-thing": "/components/common/no_thing"
   }
 }

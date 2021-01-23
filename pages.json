@@ -14,7 +14,8 @@
 							"borderRadius": "4px",
 							"placeholder": "搜索糗事",
 							"placeholderColor": "#ccc",
-							"disabled": false
+							"disabled": true
+							
 						},
 						// 按钮
 						"buttons": [
@@ -53,7 +54,52 @@
 			"path": "pages/paper/paper",
 			"style": {}
 		}
-	],
+	    ,{
+            "path" : "pages/search/search",
+            "style" :                                                              
+				{
+					"app-plus": {
+						"scrollIndicator": "none",
+						"bounce":"none", //关闭反弹效果
+						"titleNView": {
+							"autoBackButton": false,
+							// 搜索框
+							"searchInput": {
+								"align": "left",
+								"backgroundColor": "#f7f7f7",
+								"borderRadius": "4px",
+								"placeholder": "搜索糗事",
+								"placeholderColor": "#ccc",
+								"disabled": false
+								
+							},
+							// 按钮
+							"buttons": [
+								// 右
+								{
+									"color":"#000",
+									"colorPressed": "#bbb",
+									"float":"right",
+									"fontSize":"22px",
+									"text":"取消"
+								}
+							]
+						}
+					}
+				}
+            
+        }
+        ,{
+            "path" : "pages/publish/publish",
+            "style" : {
+				"app-plus": {
+					// 禁用原生导航
+					"titleNView": false
+				}
+			}
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "canoe_百科",

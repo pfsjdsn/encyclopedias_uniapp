@@ -10,7 +10,7 @@
 	}
 </script>
 
-<style>
+<style lang="less">
 	.load_more {
 		text-align: center;
 		color: #aaa;
