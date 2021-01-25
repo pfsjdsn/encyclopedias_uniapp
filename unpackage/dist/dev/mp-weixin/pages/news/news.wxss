@@ -1,0 +1,35 @@
+.nav_left > view,
+.nav_right > view {
+  font-size: 40rpx;
+}
+.nav_left {
+  margin: 0 0 0 16rpx;
+}
+.nav_left > view {
+  color: #ff9616;
+}
+.nav_right {
+  width: 100%;
+}
+.nav_tab_bar {
+  width: 100%;
+  margin: 0 0 0 -20rpx;
+}
+.nav_tab_bar > view {
+  font-size: 32rpx;
+  padding: 0 15rpx;
+  font-weight: bold;
+  color: #969696;
+}
+.nav_tab_bar .active {
+  color: #333;
+}
+.nav_tab_bar .nav_tab_bar_line {
+  border-bottom: 5rpx solid #fede33;
+  border-top: 5rpx solid #fede33;
+  width: 70rpx;
+  border-radius: 20rpx;
+  position: absolute;
+  bottom: 12rpx;
+}
+

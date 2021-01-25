@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-navbar": "/components/uni-nav-bar/uni-nav-bar"
+  }
 }
