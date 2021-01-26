@@ -1,11 +1,11 @@
 <template>
 	<view>
-		<uni-nav-bar :statusBar="false" rightText="发布" @clickLeft="back" @clickRight="submit">
-			<view class="u_f_ajc" @tap="changeLook">
+		<uniNavbar :statusBar="false" rightText="发布" leftIcon="back" @clickLeft="back" @clickRight="submit">
+			<view class="u_f_ajc privacy_pye" @tap="changeLook">
 				{{privacyTpye}}
 				<view class="iconfont iconxiangxia"></view>
 			</view>
-		</uni-nav-bar>
+		</uniNavbar>
 		<!-- 多行文本 -->
 		<view class="uni-textarea">
 			<textarea v-model="text" placeholder="说一句话吧~" />
@@ -140,5 +140,8 @@
 			background-color: #ffe934;
 			color: #171606;
 		}
+	}
+	.privacy_pye {
+		margin: 0 auto;
 	}
 </style>

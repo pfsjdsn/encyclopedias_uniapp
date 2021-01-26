@@ -1,12 +1,38 @@
+.common_list {
+  border: 1rpx solid red;
+  padding: 20rpx;
+}
+.common_list .common_list_l {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}
+.common_list .common_list_l image {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 100%;
+}
+.common_list .common_list_r {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.common_list .common_list_r .content_img {
+  width: 80%;
+  border-radius: 20rpx;
+}
 .nav_left > view,
 .nav_right > view {
   font-size: 40rpx;
 }
+.nav_left .iconqiandaoicon,
+.nav_right .iconqiandaoicon {
+  font-size: 20rpx;
+  color: red;
+}
 .nav_left {
   margin: 0 0 0 16rpx;
-}
-.nav_left > view {
-  color: #ff9616;
+  float: left;
+  border: 1rpx solid red;
 }
 .nav_right {
   width: 100%;

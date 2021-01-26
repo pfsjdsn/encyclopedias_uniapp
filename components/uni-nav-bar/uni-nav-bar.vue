@@ -1,5 +1,5 @@
 <template>
-	<view class="uni-navbar">
+	<view class="uni-navbar" style="margin: 40upx 0 0 0;">
 		<view :class="{ 'uni-navbar--fixed': fixed, 'uni-navbar--shadow': shadow, 'uni-navbar--border': border }" :style="{ 'background-color': backgroundColor }"
 		 class="uni-navbar__content">
 			<uni-status-bar v-if="statusBar" />

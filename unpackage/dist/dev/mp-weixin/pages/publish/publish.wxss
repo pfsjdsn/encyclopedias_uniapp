@@ -31,4 +31,7 @@
   background-color: #ffe934;
   color: #171606;
 }
+.privacy_pye {
+  margin: 0 auto;
+}
 

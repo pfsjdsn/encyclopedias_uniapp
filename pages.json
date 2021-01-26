@@ -24,7 +24,7 @@
 								"color":"#ff9619",
 								"colorPressed": "#bbb",
 								"float":"left",
-								"fontSize":"22px",
+								"fontSize":"25px",
 								"fontSrc": "/static/font/icon.ttf",
 								"text":"\ue650"
 							},
@@ -48,7 +48,11 @@
 		},
 		{
 			"path": "pages/news/news",
-			"style": {}
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
 		},
 		{
 			"path": "pages/paper/paper",
