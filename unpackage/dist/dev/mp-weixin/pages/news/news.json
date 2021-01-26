@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "uni-navbar": "/components/uni-nav-bar/uni-nav-bar"
+    "common-list": "/components/common/common_list",
+    "news-nav-bar": "/components/news/news_nav_bar",
+    "load-more": "/components/common/load_more"
   }
 }

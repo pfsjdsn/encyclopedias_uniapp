@@ -1,5 +1,5 @@
 /* flex样式 */
-	.u_f, .u_f_ac, .u_f_ajc, .u_f_jsb {
+	.u_f, .u_f_ac, .u_f_ajc, .u_f_jsb, .u_f_dc {
 		display: flex;
 	}
 	.u_f_ac,.u_f_ajc {
@@ -7,6 +7,9 @@
 	}
 	.u_f_ajc {
 		justify-content: center;
+	}
+	.u_f_dc {
+		flex-direction: column;
 	}
 	.u_f_jsb {
 		justify-content: space-between;

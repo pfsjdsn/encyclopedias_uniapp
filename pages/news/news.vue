@@ -1,147 +1,181 @@
 <template>
 	<view>
 		<!-- 自定义导航栏 -->
-		<uniNavbar :statusBar="false">
-			<!-- 左 -->
-			<block solt="left">
-				<view class="nav-left">
-					<view  class="iconfont iconqiandaoicon" style="color: #ff9616;font-size: 55upx;position: fixed;left: 20upx; top: 50upx;"></view>
-				</view>
-			</block>
-			<!-- 中 -->
-			<view class="nav_tab_bar u_f_ajc">
-				<block v-for="(tab,index) in tabBars" :key="tab.id">
-					<view class="u_f_ajc" :class="{'active':tabIndex == index}" 
-					@tap="changeTab(index)">
-						{{tab.name}}
-						<view class="nav_tab_bar_line" v-if="tabIndex == index"></view>
-					</view>
-				</block>
-			</view>
-			<!-- 右 -->
-			<block solt="right" >
-				<view class="nav-right u_f_ajc" @tap="openPublish">
-					<view  class="iconfont iconziyuan" style="font-size: 45upx;position: fixed;right: 20upx; top: 50upx;"></view>
-				</view>
-			</block>
-		</uniNavbar>
-		<!--  -->
-		<!-- 列表 -->
-		<view class="common_list u_f">
-			<view class="common_list_l">
-				<image src="../../static/demo/userpic/12.jpg" mode="widthFix" lazy-load></image>
-			</view>
-			<view class="common_list_r">
-				<view class="u_f_ac u_f_jsb">
-					<view class="u_f_ac">昵称 <view class="iconfont iconnan">25</view></view>
-					<view class="iconfont iconjia">关注</view>
-				</view>
-				<view>标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
-				<view class="content_img">
-					<image src="../../static/demo/datapic/13.jpg" mode="widthFix" lazy-load></image>
-				</view>
-				<view class="u_f_ac u_f_jsb">
-					<view>深圳 龙岗</view>
-					<view class="u_f_ac">
-						<view class="iconfont iconzhuanfa">12</view>
-						<view class="iconfont iconpinglun">22</view>
-						<view class="iconfont icondianzan">32</view>
-					</view>
-				</view>
-			</view>
+		<newsNavBar :tabBars="tabBars" :tabIndex="tabIndex" 
+		@changeTab="changeTab"></newsNavBar>
+			
+		<view class="uni-tab-bar">
+			<swiper class="swiper-box" :style="{height: swiperHeight + 'px'}"
+			 :current="tabIndex" @change="tabChange">
+			 <!-- 关注 -->
+				<swiper-item>
+					<scroll-view scroll-y class="list" @scrolltolower="loadMore()">
+						<block v-for="(item, index) in follow.list" :key="index">
+							<commonList :item="item" :index="index"></commonList>
+						</block>
+						<!-- 上拉加载 -->
+						<loadMore  :loadText="follow.loadText"></loadMore>
+					</scroll-view>
+				</swiper-item>
+			<!-- 话题 -->
+				<swiper-item>
+					<scroll-view scroll-y class="list">
+						话题 
+					</scroll-view>
+				</swiper-item>
+			</swiper>
 		</view>
 	</view>
 </template>
 
 <script>
-	import uniNavbar from '@/components/uni-nav-bar/uni-nav-bar.vue';
+	import commonList from '@/components/common/common_list.vue';
+	import newsNavBar from '@/components/news/news_nav_bar.vue';
+	import loadMore from '@/components/common/load_more.vue';
 	export default {
 		components: {
-			uniNavbar
+			commonList,
+			newsNavBar,
+			loadMore
 		},
 		data() {
 			return {
+				swiperHeight: 500,
 				tabIndex: 0,
 				tabBars: [
 					{name: '关注', id: 1},
 					{name: '话题', id: 2}
 				],
+				follow: {
+					loadText: '上拉加载更多',
+					list: [
+						// 文字
+						{
+							userPic: '../../static/demo/userpic/12.jpg',
+							userName: '哈哈',
+							sex: 0, //0 男 1女
+							age: 25,
+							isFollow: false,
+							title: '标题',
+							titlePic: '',
+							video: false,
+							share: false,
+							path: '深圳 龙岗',
+							shareNum: 20,
+							commentNum: 30,
+							goodNum: 20
+							
+						},
+						// 图文
+						{
+							userPic: '../../static/demo/userpic/12.jpg',
+							userName: '哈哈',
+							sex: 0, //0 男 1女
+							age: 25,
+							isFollow: false,
+							title: '标题',
+							titlePic: '../../static/demo/datapic/13.jpg',
+							video: false,
+							share: false,
+							path: '深圳 龙岗',
+							shareNum: 20,
+							commentNum: 30,
+							goodNum: 20
+							
+						},
+						// 视频
+						{
+							userPic: '../../static/demo/userpic/12.jpg',
+							userName: '哈哈',
+							sex: 1, //0 男 1女
+							age: 25,
+							isFollow: false,
+							title: '标题',
+							titlePic: '../../static/demo/datapic/13.jpg',
+							video: {
+								lookNum: '20w',
+								long: '2: 47'
+							},
+							share: false,
+							path: '深圳 龙岗',
+							shareNum: 20,
+							commentNum: 30,
+							goodNum: 20
+							
+						},
+						// 分享
+						{
+							userPic: '../../static/demo/userpic/12.jpg',
+							userName: '哈哈',
+							sex: 0, //0 男 1女
+							age: 25,
+							isFollow: false,
+							title: '标题',
+							titlePic: '',
+							video: false,
+							share: {
+								title: '分享标题',
+								titlePic: '../../static/demo/datapic/14.jpg'
+							},
+							path: '深圳 龙岗',
+							shareNum: 20,
+							commentNum: 30,
+							goodNum: 20
+							
+						}
+					]
+				}
+				
 			}
 		},
+		onLoad() {
+			uni.getSystemInfo({
+			    success:(res) => {
+					let height = res.windowHeight - uni.upx2px(100) // 视口高度-顶部导航高度
+					this.swiperHeight = height
+			    }
+			});
+		},
 		methods: {
+			// 点击切换
 			changeTab(index)  {
 				this.tabIndex = index
+			},		
+			// 滑动事件
+			tabChange(e) {
+				this.tabIndex = e.detail.current
 			},
-			openPublish() {
-				console.log(1111111111111)
-				// 打开发布页面
-				uni.navigateTo({
-					url: '../publish/publish'
-				})
+			// 上拉加载
+			loadMore(index) {
+				if(this.follow.loadText != '上拉加载更多') {
+					return;
+				}
+				this.follow.loadText = '加载中...'
+				setTimeout(() => {
+					let obj = {
+							userPic: '../../static/demo/userpic/12.jpg',
+							userName: '哈哈',
+							sex: 0, //0 男 1女
+							age: 25,
+							isFollow: false,
+							title: '标题',
+							titlePic: '../../static/demo/datapic/13.jpg',
+							video: false,
+							share: false,
+							path: '深圳 龙岗',
+							shareNum: 20,
+							commentNum: 30,
+							goodNum: 20
+							
+						};
+					this.follow.list.push(obj)
+					this.follow.loadText = '上拉加载更多'
+				}, 1000)
 			},
-			
 		}
 	}
 </script>
 
 <style lang="less">
-	.common_list {
-		border: 1upx solid red;
-		padding: 20upx;
-		.common_list_l {
-			flex-shrink: 0; //收缩比率 0为不压缩
-			image {
-				width: 90upx;
-				height: 90upx;
-				border-radius: 100%;
-			}
-		}
-		.common_list_r {
-			flex: 1;
-			.content_img {
-				width: 80%;
-				border-radius: 20upx;
-			}
-		}
-		
-	}
-
-	.nav_left, .nav_right {
-		>view {
-			font-size: 40upx;
-		}
-		.iconqiandaoicon {
-			font-size: 20upx;
-			color: red;
-		}
-	}
-	.nav_left {
-		margin: 0 0 0 16upx;
-		float: left;
-		border: 1upx solid red;
-	}
-	.nav_right {
-		width: 100%;	
-	}
-	.nav_tab_bar {
-		width: 100%;
-		margin: 0 0 0 -20upx;
-		>view {
-			font-size: 32upx;
-			padding: 0 15upx;
-			font-weight: bold;
-			color: #969696;
-		}
-		.active {
-			color: #333;
-		}
-		.nav_tab_bar_line {
-			border-bottom: 5upx solid #fede33;
-			border-top: 5upx solid #fede33;
-			width: 70upx;
-			border-radius: 20upx;
-			position: absolute;
-			bottom: 12upx;
-		}
-	}
+	
 </style>

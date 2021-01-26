@@ -1,0 +1,39 @@
+.nav_left > view.data-v-5b1d27c8,
+.nav_right > view.data-v-5b1d27c8 {
+  font-size: 40rpx;
+}
+.nav_left .iconqiandaoicon.data-v-5b1d27c8,
+.nav_right .iconqiandaoicon.data-v-5b1d27c8 {
+  font-size: 20rpx;
+  color: red;
+}
+.nav_left.data-v-5b1d27c8 {
+  margin: 0 0 0 16rpx;
+  float: left;
+  border: 1rpx solid red;
+}
+.nav_right.data-v-5b1d27c8 {
+  width: 100%;
+}
+.nav_tab_bar.data-v-5b1d27c8 {
+  width: 100%;
+  margin: 0 0 0 -20rpx;
+}
+.nav_tab_bar > view.data-v-5b1d27c8 {
+  font-size: 32rpx;
+  padding: 0 15rpx;
+  font-weight: bold;
+  color: #969696;
+}
+.nav_tab_bar .active.data-v-5b1d27c8 {
+  color: #333;
+}
+.nav_tab_bar .nav_tab_bar_line.data-v-5b1d27c8 {
+  border-bottom: 5rpx solid #fede33;
+  border-top: 5rpx solid #fede33;
+  width: 70rpx;
+  border-radius: 20rpx;
+  position: absolute;
+  bottom: 12rpx;
+}
+
