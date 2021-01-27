@@ -5,7 +5,9 @@
     "pages/news/news",
     "pages/paper/paper",
     "pages/search/search",
-    "pages/publish/publish"
+    "pages/publish/publish",
+    "pages/topic_classification/topic_classification",
+    "pages/topic_detail/topic_detail"
   ],
   "subPackages": [],
   "window": {

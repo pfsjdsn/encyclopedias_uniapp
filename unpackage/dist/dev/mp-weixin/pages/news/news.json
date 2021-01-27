@@ -2,6 +2,8 @@
   "usingComponents": {
     "common-list": "/components/common/common_list",
     "news-nav-bar": "/components/news/news_nav_bar",
+    "hot-categories": "/components/news/hot_categories",
+    "topic-list": "/components/news/topic_list",
     "load-more": "/components/common/load_more"
   }
 }

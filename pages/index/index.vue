@@ -1,6 +1,8 @@
 <template>
 	<view>
-		<swiperTabHead :tabBars="tabBars" :tabIndex="tabIndex" @tabtap="tabtap"></swiperTabHead>
+		<swiperTabHead :tabBars="tabBars" 
+		:tabIndex="tabIndex" @tabtap="tabtap">
+		</swiperTabHead>
 		<view class="uni-tab-bar">
 			<swiper class="swiper-box" :style="{height: swiperHeight + 'px'}"
 			 :current="tabIndex" @change="tabChange">
@@ -33,7 +35,7 @@
 		components:{indexList, swiperTabHead, loadMore, noThing},
 		data() {
 			return {
-				swiperHeight: 0,
+				swiperHeight: 500,
 				tabIndex: 0,
 				newsList: [
 					{	loadText: '上拉加载更多',

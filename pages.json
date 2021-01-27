@@ -105,6 +105,33 @@
 				}
 			}
 		}
+        ,{
+            "path" : "pages/topic_classification/topic_classification",
+            "style" : 
+            {
+                "navigationBarTitleText": "话题分类",
+                "app-plus": {
+					"bounce":"none" //关闭反弹效果
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/topic_detail/topic_detail",
+            "style" : {
+				"app-plus": {
+					"scrollIndicator": "none", // 隐藏滚动条
+					"titleNView": {
+						"type": "transparent", //渐变
+						"buttons": [
+							{
+								"type": "menu"
+							}
+						]
+					}
+				}
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

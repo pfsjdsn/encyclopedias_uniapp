@@ -133,7 +133,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var indexList = function indexList() {__webpack_require__.e(/*! require.ensure | components/index/index_list */ "components/index/index_list").then((function () {return resolve(__webpack_require__(/*! @/components/index/index_list.vue */ 49));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var swiperTabHead = function swiperTabHead() {__webpack_require__.e(/*! require.ensure | components/index/swiper_tab_header */ "components/index/swiper_tab_header").then((function () {return resolve(__webpack_require__(/*! @/components/index/swiper_tab_header.vue */ 56));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 63));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var noThing = function noThing() {__webpack_require__.e(/*! require.ensure | components/common/no_thing */ "components/common/no_thing").then((function () {return resolve(__webpack_require__(/*! @/components/common/no_thing.vue */ 70));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var indexList = function indexList() {__webpack_require__.e(/*! require.ensure | components/index/index_list */ "components/index/index_list").then((function () {return resolve(__webpack_require__(/*! @/components/index/index_list.vue */ 65));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var swiperTabHead = function swiperTabHead() {__webpack_require__.e(/*! require.ensure | components/index/swiper_tab_header */ "components/index/swiper_tab_header").then((function () {return resolve(__webpack_require__(/*! @/components/index/swiper_tab_header.vue */ 72));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 79));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var noThing = function noThing() {__webpack_require__.e(/*! require.ensure | components/common/no_thing */ "components/common/no_thing").then((function () {return resolve(__webpack_require__(/*! @/components/common/no_thing.vue */ 86));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
 
 
 
@@ -168,7 +170,7 @@ __webpack_require__.r(__webpack_exports__);
   components: { indexList: indexList, swiperTabHead: swiperTabHead, loadMore: loadMore, noThing: noThing },
   data: function data() {
     return {
-      swiperHeight: 0,
+      swiperHeight: 500,
       tabIndex: 0,
       newsList: [
       { loadText: '上拉加载更多',

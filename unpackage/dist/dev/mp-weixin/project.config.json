@@ -23,8 +23,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/news/news",
-          "pathName": "pages/news/news",
+          "name": "pages/topic_detail/topic_detail",
+          "pathName": "pages/topic_detail/topic_detail",
           "scene": null
         }
       ]
