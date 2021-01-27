@@ -5,7 +5,10 @@
 		</view>
 		<view class="common_list_r">
 			<view class="u_f_ac u_f_jsb">
-				<view class="u_f_ac nick_name?">{{item.userName}} <view class="iconfont age" :class="[item.sex == 0 ? 'iconnan' : 'iconnv2']">{{item.age}}</view></view>
+				<view class="u_f_ac nick_name?">
+				{{item.userName}} 
+				<tagSexAge :sex="item.sex" :age="item.sex"></tagSexAge>
+				</view>
 				<view v-show="!isFollow" @tap="doFollow" class="iconfont iconjia follow">关注</view>
 			</view>
 			<view class="title">{{item.title}}</view>
@@ -37,7 +40,11 @@
 </template>
 
 <script>
+	import tagSexAge from './tag_sex_age.vue';
 	export default {
+		components: {
+			tagSexAge
+		},
 		props: {
 			item: Object,
 			index: Number
@@ -120,16 +127,7 @@
 				color: #999;
 				font-size: 30upx;
 			}
-			.age {
-				background: #007aff;
-				color: #fff;
-				font-size: 24upx;
-				padding: 5upx 10upx;
-				margin: 0 0 0 10upx;
-				border-radius: 20upx;
-				line-height: 26upx;
-				
-			}
+			
 			.follow {
 				background-color: #eee;
 				padding: 0 10upx;

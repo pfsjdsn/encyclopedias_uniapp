@@ -63,15 +63,6 @@
   color: #999;
   font-size: 30rpx;
 }
-.common_list .common_list_r .age {
-  background: #007aff;
-  color: #fff;
-  font-size: 24rpx;
-  padding: 5rpx 10rpx;
-  margin: 0 0 0 10rpx;
-  border-radius: 20rpx;
-  line-height: 26rpx;
-}
 .common_list .common_list_r .follow {
   background-color: #eee;
   padding: 0 10rpx;

@@ -23,12 +23,6 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/paper/paper",
-          "pathName": "pages/paper/paper",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "pages/user_list/user_list",
           "pathName": "pages/user_list/user_list",
           "scene": null
