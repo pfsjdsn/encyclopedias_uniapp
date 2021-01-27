@@ -1,0 +1,26 @@
+.paper_list.data-v-cb98d1e2 {
+  padding: 20rpx 0;
+}
+.paper_list image.data-v-cb98d1e2 {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+  margin: 0 20rpx 0 0;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}
+.paper_list > view.data-v-cb98d1e2 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.paper_list .time.data-v-cb98d1e2 {
+  color: #cbcbcb;
+}
+.paper_list .user_name.data-v-cb98d1e2 {
+  font-size: 35rpx;
+}
+.paper_list .info_content.data-v-cb98d1e2 {
+  color: #999;
+}
+

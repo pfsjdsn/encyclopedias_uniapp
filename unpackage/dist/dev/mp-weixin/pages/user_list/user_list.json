@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "swiper-tab-head": "/components/index/swiper_tab_header"
+  }
+}

@@ -1,0 +1,1 @@
+<view><swiper-tab-head vue-id="29ea3ecc-1" tabBars="{{tabBars}}" tabIndex="{{tabIndex}}" scrollStyle="border-bottom: 0;" scrollItemStyle="width: 33%" data-event-opts="{{[['^tabtap',[['tabtap']]]]}}" bind:tabtap="__e" bind:__l="__l"></swiper-tab-head></view>

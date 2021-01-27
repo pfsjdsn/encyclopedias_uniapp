@@ -57,10 +57,37 @@
 		},
 		{
 			"path": "pages/paper/paper",
-			"style": {}
+			"style": {	"navigationBarTitleText": "小纸条",
+				"enablePullDownRefresh": true, //开启下拉刷新
+				"app-plus": {
+					"titleNView": {
+						// 按钮
+						"buttons": [
+							// 左
+							{
+								"color":"#000",
+								"colorPressed": "#bbb",
+								"float":"left",
+								"fontSize":"25px",
+								"fontSrc": "/static/font/icon.ttf",
+								"text":"\ue607"
+							},
+							// 右
+							{
+								"color":"#000",
+								"colorPressed": "#bbb",
+								"float":"right",
+								"fontSize":"25px",
+								"fontSrc": "/static/font/icon.ttf",
+								"text":"\ue716"
+							}
+						]
+					}
+				}
+			}
 		},
 		{
-            "path" : "pages/search/search",
+            "path":"pages/search/search",
             "style" :                                                              
 				{
 					"app-plus": {
@@ -119,6 +146,7 @@
         ,{
             "path" : "pages/topic_detail/topic_detail",
             "style" : {
+				"enablePullDownRefresh": true, //开启下拉刷新
 				"app-plus": {
 					"scrollIndicator": "none", // 隐藏滚动条
 					"titleNView": {
@@ -131,6 +159,38 @@
 					}
 				}
 			}
+        }
+        ,{
+            "path" : "pages/user_list/user_list",                             
+            "style": {	
+            	"app-plus": {
+					"animationType":"slide-in-left", //进场动画 
+            		"titleNView": {
+            			// 按钮
+            			"buttons": [
+            				// 左
+            				{
+            					"color":"#000",
+            					"colorPressed": "#bbb",
+            					"float":"left",
+            					"fontSize":"25px",
+            					"fontSrc": "/static/font/icon.ttf",
+            					"text":"\ue607"
+            				},
+            				// 右
+            				{
+            					"color":"#000",
+            					"colorPressed": "#bbb",
+            					"float":"right",
+            					"fontSize":"25px",
+            					"fontSrc": "/static/font/icon.ttf",
+            					"text":"\ue716"
+            				}
+            			]
+            		}
+            	}
+            }
+            
         }
     ],
 	"globalStyle": {
