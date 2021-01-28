@@ -128,17 +128,37 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-var _default =
-{
-  data: function data() {
-    return {};
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 100));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var noThing = function noThing() {__webpack_require__.e(/*! require.ensure | components/common/no_thing */ "components/common/no_thing").then((function () {return resolve(__webpack_require__(/*! @/components/common/no_thing.vue */ 107));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var indexList = function indexList() {__webpack_require__.e(/*! require.ensure | components/index/index_list */ "components/index/index_list").then((function () {return resolve(__webpack_require__(/*! @/components/index/index_list.vue */ 86));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  components: {
+    indexList: indexList,
+    noThing: noThing,
+    loadMore: loadMore },
+
+  data: function data() {
+    return {
+      searchText: '',
+      isSearch: false,
+      loadText: '上拉加载更多',
+      list: [] };
 
   },
   // 监听原生标题栏按钮点击事件
@@ -152,13 +172,92 @@ var _default =
   },
   // 监听文本框发生变化
   onNavigationBarSearchInputChanged: function onNavigationBarSearchInputChanged() {
-    console.log(e.text);
+    this.searchText = e.text;
   },
   // 用户点击软键盘上的“搜索”按钮时触发。
   onNavigationBarSearchInputConfirmed: function onNavigationBarSearchInputConfirmed(e) {
     console.log(e.text);
+    if (e.text) {this.getData();}
   },
-  methods: {} };exports.default = _default;
+  // 下拉刷新 
+  onPullDownRefresh: function onPullDownRefresh() {
+    this.getData();
+    uni.stopPullDownRefresh();
+  },
+  // 触底事件
+  onReachBottom: function onReachBottom() {
+    this.loadMore();
+  },
+  methods: {
+    // 搜索事件
+    getData: function getData() {var _this = this;
+      uni.showLoading();
+      setTimeout(function () {
+        var arr = [
+        {
+          userPic: '../../static/demo/userpic/12.jpg',
+          userName: '昵称',
+          isFollow: true,
+          title: '我是标题',
+          type: 'img', // img： 图文， video: 视频 
+          title_pic: '../../static/demo/datapic/11.jpg',
+          infoNum: {
+            index: 1, // 0: 无操作， 1：顶， ２： 踩
+            dingNum: 10,
+            caiNum: 10 },
+
+          commentNum: 10,
+          shareNum: 10 },
+
+        {
+          userPic: '../../static/demo/userpic/12.jpg',
+          userName: '昵称',
+          isFollow: false,
+          title: '我是标题',
+          type: 'video', // img： 图文， video: 视频 
+          playNum: '20w',
+          long: '2:47',
+          title_pic: '../../static/demo/datapic/11.jpg',
+          infoNum: {
+            index: 1, // 0: 无操作， 1：顶， ２： 踩
+            dingNum: 10,
+            caiNum: 10 },
+
+          commentNum: 10,
+          shareNum: 10 }];
+
+
+        _this.list = arr;
+        uni.hideLoading();
+        _this.isSearch = true;
+      }, 1000);
+    },
+    // 上拉加载
+    loadMore: function loadMore(index) {var _this2 = this;
+      if (this.loadText != '上拉加载更多') {
+        return;
+      }
+      this.loadText = '加载中...';
+      setTimeout(function () {
+        var obj = {
+          userPic: '../../static/demo/userpic/12.jpg',
+          userName: '昵称',
+          isFollow: true,
+          title: '我是标题',
+          type: 'img', // img： 图文， video: 视频 
+          title_pic: '../../static/demo/datapic/11.jpg',
+          infoNum: {
+            index: 0, // 0: 无操作， 1：顶， ２： 踩
+            dingNum: 10,
+            caiNum: 10 },
+
+          commentNum: 10,
+          shareNum: 10 };
+
+        _this2.list.push(obj);
+        _this2.loadText = '上拉加载更多';
+      }, 1000);
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ })

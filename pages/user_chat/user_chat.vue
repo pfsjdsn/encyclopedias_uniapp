@@ -1,19 +1,12 @@
 <template>
 	<view>
 		<!-- 聊天列表 -->
-		<view class="user_chat_list u_f user_chat_me">
-			<!-- <image src="../../static/demo/userpic/11.jpg"
-			 mode="widthFix" lazy-load></image> -->
-			<view class="user_chat_list_body">
-				<!--文字 -->
-<!-- 				<text>随便随便随便随便随便随便随便随便随便随便随便随便随便随便随便随便随便随便随便随便随便随便随便</text> -->
-				<!-- 图片 -->
-				<image src="../../static/demo/datapic/11.jpg" 
-				mode="widthFix" lazy-load></image>
-			</view>
-			<image src="../../static/demo/userpic/11.jpg"
-			 mode="widthFix" lazy-load class="user_head"></image>
-		</view>
+		<scroll-view id="scrollView" scroll-y :scroll-top="scrollTop" 
+		scroll-with-animation="true" :style="{height: style.contentH + 'px'}">
+			<block v-for="(item, index) in list" :key="index">
+				<userChatList :item="item" :index="index" class="user_chat_item"></userChatList>
+			</block>
+		</scroll-view>
 		<!-- 输入框 -->
 		<userChatBottom @submit="submit"></userChatBottom>
 	</view>
@@ -21,63 +14,94 @@
 
 <script>
 	import userChatBottom from '@/components/user_chat/user_chat_bottom.vue'; 
+	import userChatList from '@/components/user_chat/user_chat_list.vue'; 
+	import time from '@/common/time.js'
 	export default {
 		components:{
-			userChatBottom
+			userChatBottom,
+			userChatList
 		},
 		data() {
 			return {
-				
+				scrollTop: 0,
+				style: {
+					contentH: 0,
+					itemH: 0
+				},
+				list: []
 			}
+		}, 
+		onLoad(){
+			this.getData()
+			this.initData()
+		},
+		mounted() {
+			this.pageToBottom()
 		},
 		methods: {
+			// 初始化参数
+			initData() {
+				try {
+				    const res = uni.getSystemInfoSync();
+					this.style.contentH = res.windowHeight - uni.upx2px(120)
+				} catch (e) {
+				    // error
+				}
+			},
+			pageToBottom() {
+				let q = uni.createSelectorQuery()
+				q.select('#scrollView').boundingClientRect()
+				q.selectAll('.user_chat_item').boundingClientRect()
+				q.exec((res) => {
+					res[1].forEach( (ret) => {
+						this.style.itemH += ret.height
+					})
+					if(this.style.itemH > this.style.contentH) {
+						this.scrollTop = this.style.itemH
+					}
+				})
+			},
+			getData() {
+				let arr = [
+					{
+						isMe: false,
+						userPic: '../../static/demo/userpic/11.jpg',
+						type: 'text',
+						data: '哈哈',
+						time: '1554970012'
+					},
+					{
+						isMe: true,
+						userPic: '../../static/demo/userpic/11.jpg',
+						type: 'img',
+						data: '../../static/demo/userpic/11.jpg',
+						time: '1554970814'
+					}
+				]
+				for (let i = 0; i<arr.length; i++) {
+					arr[i].gstime = time.gettime.getChatTime(arr[i].time, i> 0 ? arr[i-1].time : 0)
+				}
+				this.list = arr
+			},
 			submit(data) {
-				console.log('当前输入的是：', data)
+				// 构建数据
+				let now = new Date().getTime()
+				let obj = {
+						isMe: true,
+						userPic: '../../static/demo/userpic/11.jpg',
+						type: 'text',
+						data: data,
+						time: now,
+						gstime: time.gettime.getChatTime(now, this.list[this.list.length - 1].time)
+					};
+					this.list.push(obj)
+					this.pageToBottom()
+					console.log('当前输入的是：', data)
 			}
 		}
 	}
 </script>
 
 <style lang="less">
-	.user_chat_list {
-		.user_head {
-			width: 100upx;
-			height: 100upx;
-			border-radius: 100%;
-			flex-shrink: 0;
-		}
-		.user_chat_list_body {
-			position: relative;
-			background: #f4f4f4;
-			padding: 25upx;
-			margin: 0 100upx 0 20upx;
-			border-radius: 20upx;
-			image {
-				max-width: 150upx;
-				max-height: 200upx;
-			}
-		}
-		.user_chat_list_body:after {
-			position: absolute;
-			left: -30upx;
-			right: 0;
-			top: 30upx;
-			content: '';
-			width: 0;
-			height: 0;
-			border: 16upx solid #f4f4f4;
-			border-color: transparent #f4f4f4 transparent transparent;
-		}
-	}
-	.user_chat_me {
-		justify-content: flex-end;
-		.user_chat_list_body {
-			margin: 0 20upx 0 100upx;
-		}
-		.user_chat_list_body:after {
-			left: auto;
-			right: -30upx;
-			border-color: transparent transparent transparent #f4f4f4;
-		}
-	}
+	
 </style>

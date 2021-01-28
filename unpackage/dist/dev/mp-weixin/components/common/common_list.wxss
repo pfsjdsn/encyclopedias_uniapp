@@ -4,6 +4,7 @@
 .common_list .common_list_l {
   -webkit-flex-shrink: 0;
           flex-shrink: 0;
+  /* //收缩比率 0为不压缩 */
 }
 .common_list .common_list_l image {
   width: 90rpx;
