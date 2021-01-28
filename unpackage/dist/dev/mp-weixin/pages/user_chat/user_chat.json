@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "聊天页",
+  "usingComponents": {
+    "user-chat-bottom": "/components/user_chat/user_chat_bottom"
+  }
+}

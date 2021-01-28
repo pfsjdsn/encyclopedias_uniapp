@@ -1,5 +1,5 @@
 <template>
-	<view class="paper_list u_f_ac animate__animated animate__fadeInLeft animate__fast">
+	<view class="paper_list u_f_ac animate__animated animate__fadeInLeft animate__fast" @tap="openDetail">
 		<image :src="item.userPic" 
 		mode="widthFix" lazy-load></image>
 		<view>
@@ -28,7 +28,15 @@
 			return {
 				
 			};
+		},
+		methods:{
+			openDetail() {
+				uni.navigateTo({
+					url:"../../pages/user_chat/user_chat"
+				})
+			}
 		}
+			
 	}
 </script>
 

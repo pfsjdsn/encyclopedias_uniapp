@@ -23,8 +23,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/user_list/user_list",
-          "pathName": "pages/user_list/user_list",
+          "name": "pages/user_chat/user_chat",
+          "pathName": "pages/user_chat/user_chat",
           "scene": null
         }
       ]

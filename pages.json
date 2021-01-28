@@ -192,6 +192,28 @@
             }
             
         }
+        ,{
+            "path" : "pages/user_chat/user_chat",
+            "style" :{
+				"navigationBarTitleText":"聊天页",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							// 右
+							{
+								"color":"#000",
+								"colorPressed": "#bbb",
+								"float":"right",
+								"fontSize":"25px",
+								"fontSrc": "/static/font/icon.ttf",
+								"text":"\ue608"
+							}
+						]
+					}
+				}
+			}
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
