@@ -7,7 +7,7 @@
 			<view class="u_f_ac u_f_jsb">
 				<view class="u_f_ac nick_name?">
 				{{item.userName}} 
-				<tagSexAge :sex="item.sex" :age="item.sex"></tagSexAge>
+				<tagSexAge :sex="item.sex" :age="item.age"></tagSexAge>
 				</view>
 				<view v-show="!isFollow" @tap="doFollow" class="iconfont iconjia follow">关注</view>
 			</view>

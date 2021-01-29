@@ -8,17 +8,21 @@
 				<view class="u_f_ac u_f_jsb">
 					<view class="u_f_ac nick_name?">
 					{{item.userName}} 
-					<tagSexAge :sex="item.sex" :age="item.sex"></tagSexAge>
+					<tagSexAge :sex="item.sex" :age="item.age"></tagSexAge>
 					</view>
 					<view v-show="!isFollow" @tap="doFollow" class="iconfont iconjia follow">关注</view>
 				</view>
 				<view class="common_list_r_time">26天前</view>
 			</view>
 			<view class="title">{{item.title}}</view>
-			<view class="content_img u_f_ajc" :class="[item.share ? '.content_img_share' : '.content_img_noshare']"> 
+			<view class="content_img u_f_ajc u_f_dc" :class="[item.share ? '.content_img_share' : '.content_img_noshare']"> 
 				<!-- 图片 -->
-				<image v-if="item.titlePic" :src="item.titlePic" 
-				mode="widthFix" lazy-load></image>
+				<block v-for="(pic, index) in item.morePic" :key="index">
+					<image :src="pic"
+					mode="widthFix" 
+					style="margin: 0 0 15upx 0;"
+					lazy-load @tap="imgDetail(index)"></image>
+				</block>
 				<!-- 视频 -->
 				<template v-if="item.video">
 					<view class="iconfont iconbofang"></view>
@@ -57,6 +61,13 @@
 			};
 		},
 		methods: {
+			// 图片预览
+			imgDetail(index) {
+				uni.previewImage({
+					current: index,
+					urls: this.item.morePic
+				})
+			},
 			doFollow() {
 				this.isFollow = true
 				uni.showToast({

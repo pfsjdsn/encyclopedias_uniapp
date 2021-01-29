@@ -22,7 +22,7 @@
 		color: #fff;
 		font-size: 24upx;
 		padding: 5upx 10upx;
-		// margin: 0 0 0 10upx;
+		margin: 0 0 0 10upx;
 		border-radius: 20upx;
 		line-height: 26upx;
 	}
