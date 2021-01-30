@@ -44,7 +44,20 @@
 		},
 		{
 			"path": "pages/home/home",
-			"style": {}
+			"style": {
+				"navigationBarTitleText":"我的",
+				"app-plus": {
+					"scrollIndicator":"none",
+					"bounce":"none", //关闭回弹效果
+					"titleNView": {
+						"buttons": [
+							{
+								"type":"menu"
+							}
+						]
+					}
+				}
+			}
 		},
 		{
 			"path": "pages/news/news",

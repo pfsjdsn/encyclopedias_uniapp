@@ -163,7 +163,7 @@ var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 7
 
   data: function data() {
     return {
-      shareShow: true,
+      shareShow: false,
       comment: {
         count: 20,
         list: [] },

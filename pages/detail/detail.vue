@@ -31,7 +31,7 @@
 		},
 		data() {
 			return {
-				shareShow: true,
+				shareShow: false,
 				comment: {
 					count: 20,
 					list: [],

@@ -197,7 +197,7 @@ var _default =
         _this.providerList = data.sort(function (x, y) {
           return x.sort - y.sort;
         });
-        console.log(_this.providerList);
+        console.log(_this.providerList, 11111111111);
       },
       fail: function fail(e) {
         console.log('获取分享通道失败', e);

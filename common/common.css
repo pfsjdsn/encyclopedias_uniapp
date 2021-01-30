@@ -11,6 +11,9 @@
 	.u_f_dc {
 		flex-direction: column;
 	}
+	.u_f1 {
+		flex: 1;
+	}
 	.u_f_jsb {
 		justify-content: space-between;
 	}

@@ -57,11 +57,6 @@
                     "weixin" : {
                         "appid" : "wxdbe04c300fd0f682",
                         "UniversalLinks" : ""
-                    },
-                    "sina" : {
-                        "appkey" : "",
-                        "appsecret" : "",
-                        "redirect_uri" : ""
                     }
                 },
                 "speech" : {
