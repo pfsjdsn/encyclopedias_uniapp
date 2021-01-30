@@ -1,0 +1,11 @@
+.body {
+  padding: 0 20rpx;
+}
+.body .user_set_btn {
+  width: 100%;
+  margin: 20rpx 0;
+  background: #ffe933 !important;
+  border: 0!important;
+  color: #333 !important;
+}
+

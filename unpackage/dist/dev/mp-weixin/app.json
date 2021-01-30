@@ -10,7 +10,8 @@
     "pages/topic_detail/topic_detail",
     "pages/user_list/user_list",
     "pages/user_chat/user_chat",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/user_set/user_set"
   ],
   "subPackages": [],
   "window": {

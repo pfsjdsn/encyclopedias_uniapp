@@ -1,4 +1,9 @@
 {
   "navigationBarTitleText": "我的",
-  "usingComponents": {}
+  "usingComponents": {
+    "home-list-item": "/components/home/home_list_item",
+    "home-info": "/components/home/home_info",
+    "other-login": "/components/home/other_login",
+    "home-data": "/components/home/home_data"
+  }
 }

@@ -1,0 +1,19 @@
+.home_list_hover.data-v-1dabb8f9 {
+  background: #f4f4f4;
+}
+.home_list_item.data-v-1dabb8f9 {
+  padding: 20rpx;
+  border-top: 1rpx solid #f4f4f4;
+  border-bottom: 1rpx solid #f4f4f4;
+}
+.home_list_item > view > view.data-v-1dabb8f9 {
+  margin: 0 10rpx 0 0;
+}
+.home_list_item > view.data-v-1dabb8f9:first-child {
+  color: #333;
+}
+.home_list_item > view.data-v-1dabb8f9:last-child {
+  color: #ccc;
+  font-size: 40rpx;
+}
+

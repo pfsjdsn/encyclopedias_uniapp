@@ -1,0 +1,1 @@
+<view class="home_list_item u_f_ac u_f_jsb data-v-1dabb8f9" hover-class="home_list_hover"><view class="u_f_ac data-v-1dabb8f9"><block wx:if="{{item.icon}}"><view class="{{['iconfont data-v-1dabb8f9',item.icon]}}"></view></block>{{item.name+''}}</view><view class="iconfont iconjinru data-v-1dabb8f9"></view></view>

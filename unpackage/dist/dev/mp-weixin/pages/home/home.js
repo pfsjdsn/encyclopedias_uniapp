@@ -130,76 +130,82 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var homeListItem = function homeListItem() {__webpack_require__.e(/*! require.ensure | components/home/home_list_item */ "components/home/home_list_item").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_list_item.vue */ 290));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var homeInfo = function homeInfo() {__webpack_require__.e(/*! require.ensure | components/home/home_info */ "components/home/home_info").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_info.vue */ 298));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var otherLogin = function otherLogin() {__webpack_require__.e(/*! require.ensure | components/home/other_login */ "components/home/other_login").then((function () {return resolve(__webpack_require__(/*! @/components/home/other_login.vue */ 306));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var homeData = function homeData() {__webpack_require__.e(/*! require.ensure | components/home/home_data */ "components/home/home_data").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_data.vue */ 314));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
+  components: {
+    homeListItem: homeListItem,
+    homeInfo: homeInfo,
+    otherLogin: otherLogin,
+    homeData: homeData },
+
   data: function data() {
     return {
-      isLogin: false };
+      isLogin: false,
+      homeData: [
+      { name: '糗事', num: 0 },
+      { name: '动态', num: 0 },
+      { name: '评论', num: 0 },
+      { name: '收藏', num: 0 }],
+
+      homeInfo: {
+        userPic: '../../static/demo/userpic/11.jpg',
+        userName: '哈哈',
+        totalNum: 0,
+        todayNum: 0 },
+
+      list: [
+      { icon: 'iconliulan', name: '浏览历史' },
+      { icon: 'iconvip', name: '糗百认证' },
+      { icon: 'iconjianpan', name: '审核糗事' }] };
+
 
   },
   onNavigationBarButtonTap: function onNavigationBarButtonTap(e) {
     if (e.index == 0) {
-      console.log('跳转设置页');
+      uni.navigateTo({
+        url: "../user_set/user_set" });
+
     }
   },
   methods: {} };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
