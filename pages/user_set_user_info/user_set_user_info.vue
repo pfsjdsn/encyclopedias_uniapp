@@ -47,21 +47,29 @@
 		</view>
 		<view class="user_set_user_info_list u_f_ac u_f_jsb">
 			<view>家乡</view>
-			<view class="u_f_ac">
-				<view>中国深圳</view>
+			<view class="u_f_ac" @tap="showMulLinkageThreePicker">
+				<view>{{pickerText}}</view>
 				<view class="iconfont iconziyuan"></view>
 			</view>
 		</view>
 		<button class="user_set_btn" 
 		type="primary" @tap="submit" >完成</button>
+		
+		<mpvueCityPicker themeColor="#007aff" ref="mpvueCityPicker" 
+		:pickerValueDefault="pickerValueDefault" 
+		@onConfirm="onConfirm" ></mpvueCityPicker>
 	</view>
 </template>
 
 <script>
+	import mpvueCityPicker from "../../components/mpvue-citypicker/mpvueCityPicker.vue";
 	let sex = ['不限', '男', '女'];
 	let emotion = ['秘密', '未婚', '已婚'];
 	let job = ['秘密', 'IT', '老师'];
 	export default {
+		components:{
+			mpvueCityPicker 
+		},
 		data() {
 			return {
 				userName: '1111',
@@ -70,6 +78,8 @@
 				job: 'IT',
 				birthday: '1987-02-07',
 				userPic: '../../static/demo/userpic/11.jpg',
+				pickerValueDefault: [0, 0 ,1],
+				pickerText: '广东省-深圳市-南山区',
 			}
 		},
 		computed: {
@@ -80,7 +90,25 @@
 				return this.getDate('end');
 			}
 		},
+		onBackPress() {
+			if (this.$refs.mpvueCityPicker.showPicker) {
+				this.$refs.mpvueCityPicker.pickerCancel();
+				return true
+			}
+		},
+		onUnload() {
+			if (this.$refs.mpvueCityPicker.showPicker) {
+				this.$refs.mpvueCityPicker.pickerCancel();
+			}
+		},
 		methods: {
+			// 三级联动
+			showMulLinkageThreePicker() {
+				this.$refs.mpvueCityPicker.show()
+			},
+			onConfirm(e) {
+				this.pickerText = e.label
+			},
 			// 修改生日
 			bindDateChange(e) {
 				this.birthday = e.target.value

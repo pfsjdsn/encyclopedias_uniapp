@@ -14,7 +14,10 @@
     "pages/user_set/user_set",
     "pages/user_set_repassword/user_set_repassword",
     "pages/user_set_email/user_set_email",
-    "pages/user_set_user_info/user_set_user_info"
+    "pages/user_set_user_info/user_set_user_info",
+    "pages/user_set_help/user_set_help",
+    "pages/user_set_about/user_set_about",
+    "pages/login/login"
   ],
   "subPackages": [],
   "window": {

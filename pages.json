@@ -284,6 +284,38 @@
             }
             
         }
+        ,{
+            "path" : "pages/user_set_help/user_set_help",
+            "style" : {
+                "navigationBarTitleText": "意见反馈",
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/user_set_about/user_set_about",
+           "style" : {
+               "navigationBarTitleText": "关于仿糗百",
+				"app-plus": {
+           		"scrollIndicator":"none"
+				}
+           }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {
+                "navigationBarTitleText": "关于仿糗百",
+            	"app-plus": {
+            		"scrollIndicator":"none",
+					"titleNView": false,
+					"bounce":"none"
+            	}
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

@@ -23,14 +23,26 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/user_set_help/user_set_help",
+          "pathName": "pages/user_set_help/user_set_help",
+          "query": "",
+          "scene": null
+        },
+        {
           "name": "pages/user_set/user_set",
           "pathName": "pages/user_set/user_set",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/user_set_user_info/user_set_user_info",
-          "pathName": "pages/user_set_user_info/user_set_user_info",
+          "name": "pages/user_set_about/user_set_about",
+          "pathName": "pages/user_set_about/user_set_about",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
           "scene": null
         }
       ]

@@ -141,7 +141,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var homeListItem = function homeListItem() {__webpack_require__.e(/*! require.ensure | components/home/home_list_item */ "components/home/home_list_item").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_list_item.vue */ 142));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var homeInfo = function homeInfo() {__webpack_require__.e(/*! require.ensure | components/home/home_info */ "components/home/home_info").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_info.vue */ 149));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var otherLogin = function otherLogin() {__webpack_require__.e(/*! require.ensure | components/home/other_login */ "components/home/other_login").then((function () {return resolve(__webpack_require__(/*! @/components/home/other_login.vue */ 156));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var homeData = function homeData() {__webpack_require__.e(/*! require.ensure | components/home/home_data */ "components/home/home_data").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_data.vue */ 163));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var homeListItem = function homeListItem() {__webpack_require__.e(/*! require.ensure | components/home/home_list_item */ "components/home/home_list_item").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_list_item.vue */ 172));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var homeInfo = function homeInfo() {__webpack_require__.e(/*! require.ensure | components/home/home_info */ "components/home/home_info").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_info.vue */ 179));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var otherLogin = function otherLogin() {__webpack_require__.e(/*! require.ensure | components/home/other_login */ "components/home/other_login").then((function () {return resolve(__webpack_require__(/*! @/components/home/other_login.vue */ 186));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var homeData = function homeData() {__webpack_require__.e(/*! require.ensure | components/home/home_data */ "components/home/home_data").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_data.vue */ 193));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -215,7 +215,12 @@ __webpack_require__.r(__webpack_exports__);
 
     }
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    openLogin: function openLogin() {
+      uni.navigateTo({
+        url: '../login/login' });
+
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

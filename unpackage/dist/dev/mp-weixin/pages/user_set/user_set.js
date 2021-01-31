@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var homeListItem = function homeListItem() {__webpack_require__.e(/*! require.ensure | components/home/home_list_item */ "components/home/home_list_item").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_list_item.vue */ 142));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var homeListItem = function homeListItem() {__webpack_require__.e(/*! require.ensure | components/home/home_list_item */ "components/home/home_list_item").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_list_item.vue */ 172));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -153,8 +153,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
       { icon: '', name: '资料编辑', clickType: 'navigateTo', url: '../../pages/user_set_user_info/user_set_user_info' },
       { icon: '', name: '小纸条', clickType: '', url: '' },
       { icon: '', name: '清除缓存', clickType: '', url: '' },
-      { icon: '', name: '意见反馈', clickType: '', url: '' },
-      { icon: '', name: '关于糗百', clickType: '', url: '' }] };
+      { icon: '', name: '意见反馈', clickType: 'navigateTo', url: '../../pages/user_set_help/user_set_help' },
+      { icon: '', name: '关于仿糗百', clickType: 'navigateTo', url: '../../pages/user_set_about/user_set_about' }] };
 
 
   },

@@ -6,7 +6,7 @@
 			<!-- 第三方登录 -->
 			<otherLogin></otherLogin>
 			<!-- 账号密码登录 -->
-			<view class="u_f_ajc">
+			<view class="u_f_ajc" @tap="openLogin">
 				账号密码登录
 				<view class="iconfont iconjinru"></view>
 			</view>
@@ -73,7 +73,11 @@
 			}
 		},
 		methods: {
-			
+			openLogin() {
+				uni.navigateTo({
+					url: '../login/login'
+				})
+			},
 		}
 	}
 </script>
