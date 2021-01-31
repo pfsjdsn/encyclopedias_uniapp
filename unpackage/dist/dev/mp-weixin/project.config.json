@@ -23,14 +23,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/home/home",
-          "pathName": "pages/home/home",
+          "name": "pages/user_set/user_set",
+          "pathName": "pages/user_set/user_set",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/user_set/user_set",
-          "pathName": "pages/user_set/user_set",
+          "name": "pages/user_set_user_info/user_set_user_info",
+          "pathName": "pages/user_set_user_info/user_set_user_info",
           "scene": null
         }
       ]

@@ -16,13 +16,13 @@
 		data() {
 			return {
 				list: [
-						{icon: '', name: '账号与安全'},
-						{icon: '', name: '绑定邮箱'},
-						{icon: '', name: '资料编辑'},
-						{icon: '', name: '小纸条'},
-						{icon: '', name: '清除缓存'},
-						{icon: '', name: '意见反馈'},
-						{icon: '', name: '关于糗百'},
+						{icon: '', name: '账号与安全', clickType: 'navigateTo', url: '../../pages/user_set_repassword/user_set_repassword'},
+						{icon: '', name: '绑定邮箱', clickType: 'navigateTo', url: '../../pages/user_set_email/user_set_email'},
+						{icon: '', name: '资料编辑', clickType: 'navigateTo', url: '../../pages/user_set_user_info/user_set_user_info'},
+						{icon: '', name: '小纸条', clickType: '', url: ''},
+						{icon: '', name: '清除缓存', clickType: '', url: ''},
+						{icon: '', name: '意见反馈', clickType: '', url: ''},
+						{icon: '', name: '关于糗百', clickType: '', url: ''},
 				]
 			}
 		},
@@ -33,15 +33,5 @@
 </script>
 
 <style lang="less">
-	.body{
-		padding: 0 20upx;
-		.user_set_btn {
-			width: 100%;
-			margin: 20upx 0;
-			background: #ffe933!important;
-			border: 0!important;
-			color: #333!important;
-		}
-	}
-	
+	@import '@/common/form.css';	
 </style>

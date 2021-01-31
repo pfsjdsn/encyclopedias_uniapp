@@ -1,6 +1,6 @@
 <template>
 	<view class="home_list_item u_f_ac u_f_jsb"
-	hover-class="home_list_hover">
+	hover-class="home_list_hover" @tap="clickEvent">
 		<view class="u_f_ac">
 			<view class="iconfont" :class="item.icon"  v-if="item.icon"></view>{{item.name}}
 		</view>
@@ -18,6 +18,15 @@
 			return {
 				
 			};
+		},
+		methods: {
+			clickEvent() {
+				switch (this.item.clickType){
+					case 'navigateTo':
+					if(this.item.url) {uni.navigateTo({url: this.item.url})}
+						break;
+				}
+			},
 		}
 	}
 </script>

@@ -59,9 +59,9 @@
 					todayNum: 0,
 				},
 				list: [
-					{icon: 'iconliulan', name: '浏览历史'},
-					{icon: 'iconvip', name: '糗百认证'},
-					{icon: 'iconjianpan', name: '审核糗事'},
+					{icon: 'iconliulan', name: '浏览历史', clickType: '', url: ''},
+					{icon: 'iconvip', name: '糗百认证', clickType: '', url: ''},
+					{icon: 'iconjianpan', name: '审核糗事', clickType: '', url: ''},
 				]
 			}
 		},
