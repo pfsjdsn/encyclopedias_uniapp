@@ -1,5 +1,5 @@
 <template>
-	<view class="home_info u_f_ac">
+	<view class="home_info u_f_ac" @tap="toUserSpace">
 		<image :src="homeInfo.userPic" 
 		mode="widthFix" lazy-load></image>	
 		<view class="u_f1">
@@ -19,6 +19,13 @@
 			return {
 				
 			};
+		},
+		methods:{
+			toUserSpace(){
+				uni.navigateTo({
+					url:'../../pages/user_space/user_space'
+				})
+			},
 		}
 	}
 </script>

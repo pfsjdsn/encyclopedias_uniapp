@@ -17,7 +17,8 @@
     "pages/user_set_user_info/user_set_user_info",
     "pages/user_set_help/user_set_help",
     "pages/user_set_about/user_set_about",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/user_space/user_space"
   ],
   "subPackages": [],
   "window": {

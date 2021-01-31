@@ -1,0 +1,1 @@
+<view><view class="user_space_head"><image src="../../static/bgimg/1.jpg" mode="widthFix" lazy-load="{{true}}"></image><view class="user_space_head_info"><image src="../../static/demo/userpic/11.jpg" mode="widthFix" lazy-load="{{true}}"></image><view>昵称</view></view></view></view>

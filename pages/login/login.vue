@@ -20,7 +20,7 @@
 			<template v-else>
 				<view class="login_input_box">
 					<view class="phone u_f_ajc">+86</view>
-					<input type="text" v-model="phone" class="uni-input common_input phone_input" placeholder="手机号" />
+					<input type="text" v-model="phone" class="uni-input common_input phone_input" placeholder="手机号" maxlength="11"/>
 				</view>
 				<view class="login_input_box">
 					<input type="text" v-model="checkNum" class="uni-input common_input forget_input" placeholder="请输入验证码" />
@@ -83,6 +83,11 @@
 			},
 		},
 		methods: {
+			// 验证手机号
+			isPhone() {
+				let mPattern = /^1[34578]\d{9}$/;
+				return mPattern.test(this.phone)
+			},
 			// 获取验证码
 			getCheckNum() {
 				if(this.codeTime > 0) {
@@ -92,9 +97,17 @@
 					})
 					return;
 				}
+				// 检验手机号合法性
+				if(!this.isPhone()) {
+					uni.showToast({
+						title: '请输入正确的手机号码',
+						icon: 'none'
+					})
+					return;
+				}
 				// 请求服务器， 发送验证码
 				// 发送成功， 开启倒计时
-				this.codeTime = 6 // 倒计时60s
+				this.codeTime = 60 // 倒计时60s
 				let timer = setInterval(() => {
 					this.codeTime--
 					if(this.codeTime < 1) {
@@ -125,7 +138,20 @@
 			},
 			// 提交登录 
 			submit() {
-				console.log('提交登录	')
+				// 账号密码登录
+				if(!this.status) {
+					return;
+				}
+				// 验证码登录 
+				// 检验手机号合法性
+				if(!this.isPhone()) {
+					uni.showToast({
+						title: '请输入正确的手机号码',
+						icon: 'none'
+					})
+					return;
+				}
+				console.log('提交登录')
 			},
 			// 返回上一步
 			back() {
