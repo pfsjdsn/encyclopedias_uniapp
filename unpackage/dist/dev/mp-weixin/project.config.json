@@ -23,18 +23,6 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/user_set/user_set",
-          "pathName": "pages/user_set/user_set",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/home/home",
-          "pathName": "pages/home/home",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "pages/user_space/user_space",
           "pathName": "pages/user_space/user_space",
           "scene": null

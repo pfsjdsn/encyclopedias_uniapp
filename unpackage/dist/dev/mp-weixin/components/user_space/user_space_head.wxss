@@ -1,0 +1,37 @@
+.user_space_head.data-v-ed92792a {
+  position: relative;
+  height: 500rpx;
+  overflow: hidden;
+}
+.user_space_head > image.data-v-ed92792a {
+  width: 100%;
+}
+.user_space_head .user_space_head_info.data-v-ed92792a {
+  position: absolute;
+  top: 150rpx;
+}
+.user_space_head .user_space_head_info > image.data-v-ed92792a {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100%;
+}
+.user_space_head .user_space_head_info > view.data-v-ed92792a:first-of-type {
+  color: #fff;
+  font-size: 35rpx;
+  font-weight: bold;
+  text-shadow: 2rpx 2rpx 10rpx #333;
+}
+.user_space_head .user_space_head_info .user_space_head_btn.data-v-ed92792a {
+  background: #ffe933;
+  color: #333;
+  border: 1rpx solid #ffe933;
+  padding: 5rpx 15rpx;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+}
+.user_space_head .user_space_head_info .active.data-v-ed92792a {
+  background: none;
+  color: #fff;
+  border: 1rpx solid #fff;
+}
+

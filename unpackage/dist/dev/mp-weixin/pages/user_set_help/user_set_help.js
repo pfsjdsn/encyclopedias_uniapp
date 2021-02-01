@@ -96,10 +96,10 @@ var components
 try {
   components = {
     uniCollapse: function() {
-      return __webpack_require__.e(/*! import() | components/uni-collapse/uni-collapse */ "components/uni-collapse/uni-collapse").then(__webpack_require__.bind(null, /*! @/components/uni-collapse/uni-collapse.vue */ 331))
+      return __webpack_require__.e(/*! import() | components/uni-collapse/uni-collapse */ "components/uni-collapse/uni-collapse").then(__webpack_require__.bind(null, /*! @/components/uni-collapse/uni-collapse.vue */ 333))
     },
     uniCollapseItem: function() {
-      return __webpack_require__.e(/*! import() | components/uni-collapse-item/uni-collapse-item */ "components/uni-collapse-item/uni-collapse-item").then(__webpack_require__.bind(null, /*! @/components/uni-collapse-item/uni-collapse-item.vue */ 338))
+      return __webpack_require__.e(/*! import() | components/uni-collapse-item/uni-collapse-item */ "components/uni-collapse-item/uni-collapse-item").then(__webpack_require__.bind(null, /*! @/components/uni-collapse-item/uni-collapse-item.vue */ 340))
     }
   }
 } catch (e) {
@@ -156,7 +156,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniCollapse = function uniCollapse() {__webpack_require__.e(/*! require.ensure | components/uni-collapse/uni-collapse */ "components/uni-collapse/uni-collapse").then((function () {return resolve(__webpack_require__(/*! ../../components/uni-collapse/uni-collapse.vue */ 331));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniCollapseItem = function uniCollapseItem() {__webpack_require__.e(/*! require.ensure | components/uni-collapse-item/uni-collapse-item */ "components/uni-collapse-item/uni-collapse-item").then((function () {return resolve(__webpack_require__(/*! ../../components/uni-collapse-item/uni-collapse-item.vue */ 338));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniCollapse = function uniCollapse() {__webpack_require__.e(/*! require.ensure | components/uni-collapse/uni-collapse */ "components/uni-collapse/uni-collapse").then((function () {return resolve(__webpack_require__(/*! ../../components/uni-collapse/uni-collapse.vue */ 333));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniCollapseItem = function uniCollapseItem() {__webpack_require__.e(/*! require.ensure | components/uni-collapse-item/uni-collapse-item */ "components/uni-collapse-item/uni-collapse-item").then((function () {return resolve(__webpack_require__(/*! ../../components/uni-collapse-item/uni-collapse-item.vue */ 340));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
