@@ -1857,6 +1857,114 @@ function normalizeComponent (
 
 /***/ }),
 
+/***/ 11:
+/*!*************************************************************!*\
+  !*** E:/我的项目/uni-qiushi/uni_encyclopedias/common/config.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 配置信息
+// api请求前缀
+var webUrl = 'http://www.xxx.com/api/v1';var _default =
+{
+  webUrl: webUrl };exports.default = _default;
+
+/***/ }),
+
+/***/ 12:
+/*!**********************************************************!*\
+  !*** E:/我的项目/uni-qiushi/uni_encyclopedias/common/lib.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config.js */ 11));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // demo
+var demo = function demo() {console.log(_config.default.webUrl, 'lib.js');}; // 网络监听
+var NetWork = { // 网络状态
+  isConnect: false, // 监听网络状态
+  On: function On() {var _this = this; // 获取当前网络状态
+    uni.getNetworkType({ success: function success(res) {console.log('获取');console.log(JSON.stringify(res));if (res.networkType !== 'none') {_this.isConnect = true;return;}uni.showToast({ icon: "none", title: '请先连接网络' });} }); // 监听网络状态变化
+    uni.onNetworkStatusChange(function (res) {console.log('监听');console.log(JSON.stringify(res));_this.isConnect = res.isConnected;if (!res.isConnected) {uni.showToast({ icon: "none", title: '您目前处于断网状态' });}});} }; // app更新
+var Update = function Update() {};var _default = { NetWork: NetWork, Update: Update, demo: demo };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
 /***/ 2:
 /*!******************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js ***!
@@ -7904,18 +8012,18 @@ internalMixin(Vue);
 
 /***/ }),
 
-/***/ 264:
+/***/ 266:
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! regenerator-runtime */ 265);
+module.exports = __webpack_require__(/*! regenerator-runtime */ 267);
 
 /***/ }),
 
-/***/ 265:
+/***/ 267:
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -7946,7 +8054,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 266);
+module.exports = __webpack_require__(/*! ./runtime */ 268);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -7963,7 +8071,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 266:
+/***/ 268:
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -8726,7 +8834,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 328:
+/***/ 330:
 /*!**********************************************************************************************!*\
   !*** E:/我的项目/uni-qiushi/uni_encyclopedias/components/mpvue-citypicker/city-data/province.js ***!
   \**********************************************************************************************/
@@ -8876,7 +8984,7 @@ provinceData;exports.default = _default;
 
 /***/ }),
 
-/***/ 329:
+/***/ 331:
 /*!******************************************************************************************!*\
   !*** E:/我的项目/uni-qiushi/uni_encyclopedias/components/mpvue-citypicker/city-data/city.js ***!
   \******************************************************************************************/
@@ -10390,7 +10498,7 @@ cityData;exports.default = _default;
 
 /***/ }),
 
-/***/ 330:
+/***/ 332:
 /*!******************************************************************************************!*\
   !*** E:/我的项目/uni-qiushi/uni_encyclopedias/components/mpvue-citypicker/city-data/area.js ***!
   \******************************************************************************************/
@@ -22943,7 +23051,7 @@ areaData;exports.default = _default;
 
 /***/ }),
 
-/***/ 380:
+/***/ 396:
 /*!**************************************************************************!*\
   !*** E:/我的项目/uni-qiushi/uni_encyclopedias/components/uni-icons/icons.js ***!
   \**************************************************************************/
@@ -23096,7 +23204,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 81:
+/***/ 83:
 /*!***********************************************************!*\
   !*** E:/我的项目/uni-qiushi/uni_encyclopedias/common/time.js ***!
   \***********************************************************/

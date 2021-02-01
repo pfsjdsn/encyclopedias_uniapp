@@ -20,7 +20,7 @@
 						{icon: '', name: '绑定邮箱', clickType: 'navigateTo', url: '../../pages/user_set_email/user_set_email'},
 						{icon: '', name: '资料编辑', clickType: 'navigateTo', url: '../../pages/user_set_user_info/user_set_user_info'},
 						{icon: '', name: '小纸条', clickType: '', url: ''},
-						{icon: '', name: '清除缓存', clickType: '', url: ''},
+						{icon: '', name: '清除缓存', clickType: 'clear', url: ''},
 						{icon: '', name: '意见反馈', clickType: 'navigateTo', url: '../../pages/user_set_help/user_set_help'},
 						{icon: '', name: '关于仿糗百', clickType: 'navigateTo', url: '../../pages/user_set_about/user_set_about'},
 				]

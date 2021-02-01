@@ -138,8 +138,8 @@
 		    "path" : "pages/publish/publish",
 		    "style" : {
 				"app-plus":{
-					"animationType": "slide-in-bottom",
-					"animationDuration": 200,
+					"animationType": "slide-in-bottom", //底部滑上
+					"animationDuration": 200, //动画持续时长ms
 					// 禁止原生导航
 					"titleNView":false
 				}
@@ -161,6 +161,8 @@
             "style" : {
 				"enablePullDownRefresh": true, //开启下拉刷新
 				"app-plus": {
+					"animationType": "slide-in-bottom", //底部滑上
+					"animationDuration": 200, //动画持续时长ms
 					"scrollIndicator": "none", // 隐藏滚动条
 					"titleNView": {
 						"type": "transparent", //渐变

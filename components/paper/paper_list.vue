@@ -1,5 +1,5 @@
 <template>
-	<view class="paper_list u_f_ac animate__animated animate__fadeInLeft animate__fast" @tap="openDetail">
+	<view class="paper_list u_f_ac animate__animated animate__fadeIn animate__fast" @tap="openDetail">
 		<image :src="item.userPic" 
 		mode="widthFix" lazy-load></image>
 		<view>

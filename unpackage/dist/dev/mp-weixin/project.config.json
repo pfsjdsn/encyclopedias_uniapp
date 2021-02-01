@@ -11,23 +11,21 @@
   "appid": "touristappid",
   "projectname": "uni-百科",
   "condition": {
-    "plugin": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
       "list": []
     },
     "game": {
-      "list": []
-    },
-    "gamePlugin": {
+      "current": -1,
       "list": []
     },
     "miniprogram": {
-      "list": [
-        {
-          "name": "pages/user_space/user_space",
-          "pathName": "pages/user_space/user_space",
-          "scene": null
-        }
-      ]
+      "current": -1,
+      "list": []
     }
   }
 }

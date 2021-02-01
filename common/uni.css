@@ -1461,3 +1461,6 @@ radio-group label, checkbox-group label{
 .left-win-active text{
 	color: #007AFF !important;
 }
+image{
+	will-change: transform
+}

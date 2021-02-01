@@ -1,5 +1,5 @@
 <template>
-	<view class="user_chat_bottom u_f_ac">
+	<view class="user_chat_bottom u_f_ac animate__animated animate__fadeInDown animate__fast">
 		<input type="text" placeholder="文明发言" v-model="text"/>
 		<view class="iconfont iconfabu u_f_ajc" @tap="submit"></view>
 	</view>
