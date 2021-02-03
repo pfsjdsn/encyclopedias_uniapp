@@ -128,7 +128,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var commonList = function commonList() {__webpack_require__.e(/*! require.ensure | components/common/common_list */ "components/common/common_list").then((function () {return resolve(__webpack_require__(/*! @/components/common/common_list.vue */ 212));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var topicInfo = function topicInfo() {__webpack_require__.e(/*! require.ensure | components/topic/topic_info */ "components/topic/topic_info").then((function () {return resolve(__webpack_require__(/*! @/components/topic/topic_info.vue */ 276));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var swiperTabHead = function swiperTabHead() {__webpack_require__.e(/*! require.ensure | components/index/swiper_tab_header */ "components/index/swiper_tab_header").then((function () {return resolve(__webpack_require__(/*! @/components/index/swiper_tab_header.vue */ 163));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 170));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 266));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var commonList = function commonList() {__webpack_require__.e(/*! require.ensure | components/common/common_list */ "components/common/common_list").then((function () {return resolve(__webpack_require__(/*! @/components/common/common_list.vue */ 212));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var topicInfo = function topicInfo() {__webpack_require__.e(/*! require.ensure | components/topic/topic_info */ "components/topic/topic_info").then((function () {return resolve(__webpack_require__(/*! @/components/topic/topic_info.vue */ 276));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var swiperTabHead = function swiperTabHead() {__webpack_require__.e(/*! require.ensure | components/index/swiper_tab_header */ "components/index/swiper_tab_header").then((function () {return resolve(__webpack_require__(/*! @/components/index/swiper_tab_header.vue */ 163));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 170));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -182,136 +182,8 @@ __webpack_require__.r(__webpack_exports__);
       { name: '最新', id: 1 }],
 
       tabList: [
-      {
-        loadText: '上拉加载更多',
-        list: [
-        {
-          userPic: '../../static/demo/userpic/12.jpg',
-          userName: '哈哈',
-          sex: 0, //0 男 1女
-          age: 25,
-          isFollow: false,
-          title: '标题',
-          titlePic: '',
-          video: false,
-          share: false,
-          path: '深圳 龙岗',
-          shareNum: 20,
-          commentNum: 30,
-          goodNum: 20 },
-
-        {
-          userPic: '../../static/demo/userpic/12.jpg',
-          userName: '哈哈',
-          sex: 0, //0 男 1女
-          age: 25,
-          isFollow: false,
-          title: '标题',
-          titlePic: '',
-          video: false,
-          share: false,
-          path: '深圳 龙岗',
-          shareNum: 20,
-          commentNum: 30,
-          goodNum: 20 },
-
-        {
-          userPic: '../../static/demo/userpic/12.jpg',
-          userName: '哈哈',
-          sex: 0, //0 男 1女
-          age: 25,
-          isFollow: false,
-          title: '标题',
-          titlePic: '',
-          video: false,
-          share: false,
-          path: '深圳 龙岗',
-          shareNum: 20,
-          commentNum: 30,
-          goodNum: 20 },
-
-        {
-          userPic: '../../static/demo/userpic/12.jpg',
-          userName: '哈哈',
-          sex: 0, //0 男 1女
-          age: 25,
-          isFollow: false,
-          title: '标题',
-          titlePic: '',
-          video: false,
-          share: false,
-          path: '深圳 龙岗',
-          shareNum: 20,
-          commentNum: 30,
-          goodNum: 20 }] },
-
-
-
-      {
-        loadText: '上拉加载更多',
-        list: [
-        {
-          userPic: '../../static/demo/userpic/12.jpg',
-          userName: '哈哈',
-          sex: 0, //0 男 1女
-          age: 25,
-          isFollow: false,
-          title: '标题',
-          titlePic: '',
-          video: false,
-          share: false,
-          path: '深圳 龙岗',
-          shareNum: 20,
-          commentNum: 30,
-          goodNum: 20 },
-
-        {
-          userPic: '../../static/demo/userpic/12.jpg',
-          userName: '哈哈',
-          sex: 0, //0 男 1女
-          age: 25,
-          isFollow: false,
-          title: '标题',
-          titlePic: '',
-          video: false,
-          share: false,
-          path: '深圳 龙岗',
-          shareNum: 20,
-          commentNum: 30,
-          goodNum: 20 },
-
-        {
-          userPic: '../../static/demo/userpic/12.jpg',
-          userName: '哈哈',
-          sex: 0, //0 男 1女
-          age: 25,
-          isFollow: false,
-          title: '标题',
-          titlePic: '',
-          video: false,
-          share: false,
-          path: '深圳 龙岗',
-          shareNum: 20,
-          commentNum: 30,
-          goodNum: 20 },
-
-        {
-          userPic: '../../static/demo/userpic/12.jpg',
-          userName: '哈哈',
-          sex: 0, //0 男 1女
-          age: 25,
-          isFollow: false,
-          title: '标题',
-          titlePic: '',
-          video: false,
-          share: false,
-          path: '深圳 龙岗',
-          shareNum: 20,
-          commentNum: 30,
-          goodNum: 20 }] }] };
-
-
-
+      { loadText: '上拉加载更多', list: [], firstLoad: false, page: 1 },
+      { loadText: '上拉加载更多', list: [], firstLoad: false, page: 1 }] };
 
 
 
@@ -325,83 +197,40 @@ __webpack_require__.r(__webpack_exports__);
   onPullDownRefresh: function onPullDownRefresh() {
     this.getData();
   },
+  onLoad: function onLoad(e) {
+    this.__init(JSON.parse(e.detail));
+  },
   methods: {
-    // 下拉刷新 
-    getData: function getData() {var _this = this;
-      setTimeout(function () {
-        // 获取数据
-        var arr = [
-        {
-          userPic: '../../static/demo/userpic/12.jpg',
-          userName: 'sssssssssssssss',
-          sex: 0, //0 男 1女
-          age: 25,
-          isFollow: false,
-          title: '标题',
-          titlePic: '',
-          video: false,
-          share: false,
-          path: '深圳 龙岗',
-          shareNum: 20,
-          commentNum: 30,
-          goodNum: 20 },
-
-        {
-          userPic: '../../static/demo/userpic/12.jpg',
-          userName: '哈哈',
-          sex: 0, //0 男 1女
-          age: 25,
-          isFollow: false,
-          title: '标题',
-          titlePic: '',
-          video: false,
-          share: false,
-          path: '深圳 龙岗',
-          shareNum: 20,
-          commentNum: 30,
-          goodNum: 20 },
-
-        {
-          userPic: '../../static/demo/userpic/12.jpg',
-          userName: '哈哈',
-          sex: 0, //0 男 1女
-          age: 25,
-          isFollow: false,
-          title: '标题',
-          titlePic: '',
-          video: false,
-          share: false,
-          path: '深圳 龙岗',
-          shareNum: 20,
-          commentNum: 30,
-          goodNum: 20 },
-
-        {
-          userPic: '../../static/demo/userpic/12.jpg',
-          userName: '哈哈',
-          sex: 0, //0 男 1女
-          age: 25,
-          isFollow: false,
-          title: '标题',
-          titlePic: '',
-          video: false,
-          share: false,
-          path: '深圳 龙岗',
-          shareNum: 20,
-          commentNum: 30,
-          goodNum: 20 }];
-
-
-        // 赋值
-        _this.tabList[_this.tabIndex].list = arr;
-        // 关闭下拉刷新 
-        uni.stopPullDownRefresh();
-      }, 2000);
+    // 初始化数据
+    __init: function __init(obj) {
+      this.topicInfo = obj;
+      // 修改标题
+      uni.setNavigationBarTitle({ title: obj.title });
+      // 获取列表数据
+      this.getList();
     },
+    // 下拉刷新 
+    getList: function getList() {
+      // {
+      // 	userPic: '../../static/demo/userpic/12.jpg',
+      // 	userName: '哈哈',
+      // 	sex: 0, //0 男 1女
+      // 	age: 25,
+      // 	isFollow: false,
+      // 	title: '标题',
+      // 	titlePic: '',
+      // 	video: false,
+      // 	share: false,
+      // 	path: '深圳 龙岗',
+      // 	shareNum: 20,
+      // 	commentNum: 30,
+      // 	goodNum: 20
+      // },
+      return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:case "end":return _context.stop();}}}, _callee);}))();},
     tabtap: function tabtap(index) {
       this.tabIndex = index;
     },
-    loadMore: function loadMore(index) {var _this2 = this;
+    loadMore: function loadMore(index) {var _this = this;
       if (this.tabList[this.tabIndex].loadText != '上拉加载更多') {
         return;
       }
@@ -423,8 +252,8 @@ __webpack_require__.r(__webpack_exports__);
           goodNum: 20 };
 
 
-        _this2.tabList[_this2.tabIndex].list.push(obj);
-        _this2.tabList[_this2.tabIndex].loadText = '上拉加载更多';
+        _this.tabList[_this.tabIndex].list.push(obj);
+        _this.tabList[_this.tabIndex].loadText = '上拉加载更多';
       }, 1000);
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

@@ -156,6 +156,9 @@
 			// 返回上一步
 			back() {
 				console.log('返回上一步	')
+				uni.navigateBack({
+					delta:1
+				})
 			},
 		}
 	}
@@ -244,5 +247,6 @@
 		font-size: 40upx;
 		font-weight: bold;
 		color: #332f0a;
+		z-index: 10;
 	}
 </style>

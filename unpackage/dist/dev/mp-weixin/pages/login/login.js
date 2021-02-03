@@ -288,6 +288,9 @@ __webpack_require__.r(__webpack_exports__);
     // 返回上一步
     back: function back() {
       console.log('返回上一步	');
+      uni.navigateBack({
+        delta: 1 });
+
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

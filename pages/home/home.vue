@@ -45,7 +45,7 @@
 		},
 		data() {
 			return {
-				isLogin: true,
+				isLogin: false,
 				homeData: [
 					{name: '糗事', num: 0},
 					{name: '动态', num: 0},
@@ -67,7 +67,7 @@
 		},
 		onNavigationBarButtonTap(e) {
 			if (e.index == 0) {
-				uni.navigateTo({
+				this.User.naviGate({
 					url:"../user_set/user_set"
 				})
 			}

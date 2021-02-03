@@ -23,7 +23,7 @@
 		methods: {
 			openDetail() {
 				uni.navigateTo({
-					url: '../../pages/topic_detail/topic_detail'
+					url: '../../pages/topic_detail/topic_detail?detail='+JSON.stringify(this.item)
 				})
 			}
 		},

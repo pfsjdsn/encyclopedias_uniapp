@@ -52,136 +52,8 @@
 					{name: '最新', id: 1}
 				],
 				tabList: [
-					{
-						loadText: '上拉加载更多',
-						list: [
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '哈哈',
-								sex: 0, //0 男 1女
-								age: 25,
-								isFollow: false,
-								title: '标题',
-								titlePic: '',
-								video: false,
-								share: false,
-								path: '深圳 龙岗',
-								shareNum: 20,
-								commentNum: 30,
-								goodNum: 20
-							},
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '哈哈',
-								sex: 0, //0 男 1女
-								age: 25,
-								isFollow: false,
-								title: '标题',
-								titlePic: '',
-								video: false,
-								share: false,
-								path: '深圳 龙岗',
-								shareNum: 20,
-								commentNum: 30,
-								goodNum: 20
-							},
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '哈哈',
-								sex: 0, //0 男 1女
-								age: 25,
-								isFollow: false,
-								title: '标题',
-								titlePic: '',
-								video: false,
-								share: false,
-								path: '深圳 龙岗',
-								shareNum: 20,
-								commentNum: 30,
-								goodNum: 20
-							},
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '哈哈',
-								sex: 0, //0 男 1女
-								age: 25,
-								isFollow: false,
-								title: '标题',
-								titlePic: '',
-								video: false,
-								share: false,
-								path: '深圳 龙岗',
-								shareNum: 20,
-								commentNum: 30,
-								goodNum: 20
-							},
-						]
-					},
-					{
-						loadText: '上拉加载更多',
-						list: [
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '哈哈',
-								sex: 0, //0 男 1女
-								age: 25,
-								isFollow: false,
-								title: '标题',
-								titlePic: '',
-								video: false,
-								share: false,
-								path: '深圳 龙岗',
-								shareNum: 20,
-								commentNum: 30,
-								goodNum: 20
-							},
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '哈哈',
-								sex: 0, //0 男 1女
-								age: 25,
-								isFollow: false,
-								title: '标题',
-								titlePic: '',
-								video: false,
-								share: false,
-								path: '深圳 龙岗',
-								shareNum: 20,
-								commentNum: 30,
-								goodNum: 20
-							},
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '哈哈',
-								sex: 0, //0 男 1女
-								age: 25,
-								isFollow: false,
-								title: '标题',
-								titlePic: '',
-								video: false,
-								share: false,
-								path: '深圳 龙岗',
-								shareNum: 20,
-								commentNum: 30,
-								goodNum: 20
-							},
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '哈哈',
-								sex: 0, //0 男 1女
-								age: 25,
-								isFollow: false,
-								title: '标题',
-								titlePic: '',
-								video: false,
-								share: false,
-								path: '深圳 龙岗',
-								shareNum: 20,
-								commentNum: 30,
-								goodNum: 20
-							},
-						]
-					}
+					{loadText: '上拉加载更多',list: [], firstLoad: false, page: 1},
+					{loadText: '上拉加载更多',list: [], firstLoad: false, page: 1}
 				]
 				
 			}
@@ -195,78 +67,35 @@
 		onPullDownRefresh() {
 			this.getData()
 		},
+		onLoad(e){
+			this.__init(JSON.parse(e.detail))
+		},
 		methods: {
+			// 初始化数据
+			__init(obj) {
+				this.topicInfo = obj
+				// 修改标题
+				uni.setNavigationBarTitle({title: obj.title})
+				// 获取列表数据
+				this.getList()
+			},
 			// 下拉刷新 
-			getData() {
-				setTimeout(() => {
-					// 获取数据
-					let arr = [
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: 'sssssssssssssss',
-								sex: 0, //0 男 1女
-								age: 25,
-								isFollow: false,
-								title: '标题',
-								titlePic: '',
-								video: false,
-								share: false,
-								path: '深圳 龙岗',
-								shareNum: 20,
-								commentNum: 30,
-								goodNum: 20
-							},
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '哈哈',
-								sex: 0, //0 男 1女
-								age: 25,
-								isFollow: false,
-								title: '标题',
-								titlePic: '',
-								video: false,
-								share: false,
-								path: '深圳 龙岗',
-								shareNum: 20,
-								commentNum: 30,
-								goodNum: 20
-							},
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '哈哈',
-								sex: 0, //0 男 1女
-								age: 25,
-								isFollow: false,
-								title: '标题',
-								titlePic: '',
-								video: false,
-								share: false,
-								path: '深圳 龙岗',
-								shareNum: 20,
-								commentNum: 30,
-								goodNum: 20
-							},
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '哈哈',
-								sex: 0, //0 男 1女
-								age: 25,
-								isFollow: false,
-								title: '标题',
-								titlePic: '',
-								video: false,
-								share: false,
-								path: '深圳 龙岗',
-								shareNum: 20,
-								commentNum: 30,
-								goodNum: 20
-							},
-						]
-					// 赋值
-					this.tabList[this.tabIndex].list = arr
-					// 关闭下拉刷新 
-					uni.stopPullDownRefresh()
-				}, 2000)
+			async getList() {
+				// {
+				// 	userPic: '../../static/demo/userpic/12.jpg',
+				// 	userName: '哈哈',
+				// 	sex: 0, //0 男 1女
+				// 	age: 25,
+				// 	isFollow: false,
+				// 	title: '标题',
+				// 	titlePic: '',
+				// 	video: false,
+				// 	share: false,
+				// 	path: '深圳 龙岗',
+				// 	shareNum: 20,
+				// 	commentNum: 30,
+				// 	goodNum: 20
+				// },
 			},
 			tabtap(index) {
 				this.tabIndex = index

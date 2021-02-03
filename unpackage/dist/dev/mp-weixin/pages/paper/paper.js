@@ -232,7 +232,7 @@ __webpack_require__.r(__webpack_exports__);
     console.log(123, e);
     switch (e.index) {
       case 0:
-        uni.navigateTo({
+        this.User.naviGate({
           url: "../user_list/user_list" });
 
         this.hidePopup();

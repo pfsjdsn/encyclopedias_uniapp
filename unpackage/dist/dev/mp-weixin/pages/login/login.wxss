@@ -84,5 +84,6 @@
   font-size: 40rpx;
   font-weight: bold;
   color: #332f0a;
+  z-index: 10;
 }
 
