@@ -10,38 +10,22 @@
   "libVersion": "",
   "appid": "touristappid",
   "projectname": "uni-百科",
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
   "condition": {
-    "plugin": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
       "list": []
     },
     "game": {
-      "list": []
-    },
-    "gamePlugin": {
+      "current": -1,
       "list": []
     },
     "miniprogram": {
-      "list": [
-        {
-          "name": "pages/topic_classification/topic_classification",
-          "pathName": "pages/topic_classification/topic_classification",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/topic_detail/topic_detail",
-          "pathName": "pages/topic_detail/topic_detail",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/news/news",
-          "pathName": "pages/news/news",
-          "scene": null
-        }
-      ]
+      "current": -1,
+      "list": []
     }
   }
 }

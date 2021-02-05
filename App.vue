@@ -17,18 +17,35 @@
 		}
 	}
 </script>
+;
+	 
+
+<style>
+	/* 引入官方css库 */
+		 @import './common/uni.css';
+		 /* 引入阿里字体图标库 */
+		 @import './common/icon.css';
+		 /* 引入animate动画库 */
+		 @import './common/animate.css';
+		 /* 引入公共样式 */
+		 @import './common/common.css';
+
+</style> 
+
+
+
+
+
+
+
 
 <style>
 	/* 引入官方css库 */
 	 @import './common/uni.css';
-	 /* 引入阿里字体图标库 */
-	 @import './common/icon.css';
 	 /* 引入animate动画库 */
 	 @import './common/animate.css';
 	 /* 引入公共样式 */
 	 @import './common/common.css';
-	 
-	 
-	 
-	 
+	 /* 引入阿里字体图标库 */
+	 @import './common/icon.css';	 
 </style>                 

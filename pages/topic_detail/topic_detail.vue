@@ -81,50 +81,56 @@
 			},
 			// 下拉刷新 
 			async getList() {
-				// {
-				// 	userPic: '../../static/demo/userpic/12.jpg',
-				// 	userName: '哈哈',
-				// 	sex: 0, //0 男 1女
-				// 	age: 25,
-				// 	isFollow: false,
-				// 	title: '标题',
-				// 	titlePic: '',
-				// 	video: false,
-				// 	share: false,
-				// 	path: '深圳 龙岗',
-				// 	shareNum: 20,
-				// 	commentNum: 30,
-				// 	goodNum: 20
-				// },
+				let url = `topic/${this.topicInfo.id}/post/${this.tabList[this.tabIndex].page}`
+				let [err, res] = await this.$http.get(url, {}, {token});
+				// 错误处理
+				if(!this.$http.errorCheck(err, res)) {
+					return this.tabList[this.tabIndex].loadText = '上拉加载更多';
+				}
+				let arr = []
+				let list = res.data.data.list
+				for(let i = 0; i < list.length; i++) {
+					arr.push(this.__format(list[i]))
+				}
+				this.tabList[this.tabIndex].list = this.tabList[this.tabIndex].page > 1 ? this.tabList[this.tabIndex].list.concat(arr) : arr
+				this.tabList[this.tabIndex].firstLoad = true;
+				return this.tabList[this.tabIndex].loadText = (list.length < 10) ? '没有更多数据了'	: '上拉加载更多';
+				
+			},
+			// 转化格式
+			__format(item) {
+				return {
+					userId: item.user.id,
+					userPic: item.user.userpic,
+					userName: item.user.username,
+					isFollow: !!item.user.fens.length,
+					id: item.id,
+					title: item.title,
+					type: 'img', // img:图文， video视频
+					titlePic: item.titlepic,
+					video: false,
+					path: item.path,
+					share: !!item.share,
+					infonum: {
+						index:(item.support.length>0) ? (item.support[0].type+1) : 0, // 0：没有操作， 1顶， 2踩
+						dingNum: item.ding_count,
+						caiNum: item.cai_count,
+					},
+					goodNum: item.ding_count,
+					commentNum: item.comment_count,
+					shareNum: item.shareNum,
+				}
 			},
 			tabtap(index) {
 				this.tabIndex = index
 			},
 			loadMore(index) {
-				if (this.tabList[this.tabIndex].loadText != '上拉加载更多') {
-					return;
-				}
+				if (this.tabList[this.tabIndex].loadText != '上拉加载更多')return;
 				this.tabList[this.tabIndex].loadText = '加载中...'
-				setTimeout(() => {
-					let obj = {
-						userPic: '../../static/demo/userpic/12.jpg',
-						userName: '哈哈',
-						sex: 0, //0 男 1女
-						age: 25,
-						isFollow: false,
-						title: '标题',
-						titlePic: '../../static/demo/datapic/13.jpg',
-						video: false,
-						share: false,
-						path: '深圳 龙岗',
-						shareNum: 20,
-						commentNum: 30,
-						goodNum: 20
-			
-					};
-					this.tabList[this.tabIndex].list.push(obj)
-					this.tabList[this.tabIndex].loadText = '上拉加载更多'
-				}, 1000)
+				// 页数+1
+				this.tabList[this.tabIndex].page++
+				// 获取数据
+				this.getList()
 			}
 		}
 	}
