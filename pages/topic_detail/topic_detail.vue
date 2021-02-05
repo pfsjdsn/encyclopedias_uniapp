@@ -128,9 +128,11 @@
 				if (this.tabList[this.tabIndex].loadText != '上拉加载更多')return;
 				this.tabList[this.tabIndex].loadText = '加载中...'
 				// 页数+1
-				this.tabList[this.tabIndex].page++
+				this.tabList[this.tabIndex].page++;
 				// 获取数据
-				this.getList()
+				this.getList();
+				
+				
 			}
 		}
 	}

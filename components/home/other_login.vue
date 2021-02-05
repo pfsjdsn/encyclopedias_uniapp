@@ -18,7 +18,7 @@
 				providerList: [],
 			};
 		},
-		mounted() {
+		onReady() {
 			this.getLoginAuth()
 		},
 		methods:{

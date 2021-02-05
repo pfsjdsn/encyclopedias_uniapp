@@ -247,6 +247,6 @@
 		font-size: 40upx;
 		font-weight: bold;
 		color: #332f0a;
-		z-index: 10;
+		z-index: 100;
 	}
 </style>
