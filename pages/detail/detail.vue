@@ -39,7 +39,7 @@
 				style: {
 					contentH: 430,
 					itemH: 0
-				},
+				},    
 				shareShow: false,
 				comment: {
 					count: 20,
