@@ -159,5 +159,7 @@
 </script>
 
 <style lang="less">
-
+	.iconshanchu1 {
+		z-index: 100;
+	}
 </style>

@@ -177,7 +177,7 @@ __webpack_require__.r(__webpack_exports__);
 
   data: function data() {
     return {
-      isLogin: false,
+      isLogin: true,
       homeData: [
       { name: '糗事', num: 0 },
       { name: '动态', num: 0 },

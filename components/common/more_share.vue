@@ -32,12 +32,13 @@
 				providerList: []
 			};
 		},
-		mounted(){
+		onReady(){
 			uni.getProvider({
 				service: 'share',
 				success: (e) => {
 					let data = []
 					for (let i = 0; i < e.provider.length; i++) {
+						console.log(e.provider[i], 'dddddddddddd')
 						switch (e.provider[i]) {
 							case 'weixin':
 								data.push({

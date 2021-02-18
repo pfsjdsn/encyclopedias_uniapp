@@ -11,12 +11,11 @@
 		</view>
 	</view>
 </template>
-
 <script>
 	export default {
 		props: {
 			item: Object,
-			index:Number
+			index:Number,
 		},
 		data() {
 			return {

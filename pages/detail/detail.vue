@@ -1,18 +1,22 @@
 <template>
 	<view>
+		
 		<detailInfo :item="detail"></detailInfo>
 		<view class="u_comment_title">最新评论 {{comment.count}}</view>
 		<view class="uni-comment u_comment">
-			<block v-for="(item, index) in comment.list" :key="index">
-				<commentList :item="item" :index="index"></commentList>
+			<scroll-view id="scrollView" scroll-y :scroll-top="scrollTop"
+			scroll-with-animation="true" :style="{height: style.contentH + 'px'}">
+			<block v-for="(item, index) in comment.list" :key="index" >
+				<commentList :item="item" :index="index" class="comment_item"></commentList>
 			</block>
+			</scroll-view>
 		</view>
+		<!-- :style="{height: style.contentH + 'px'}" -->
 		<view style="height: 120upx;"></view>
 		<!-- 输入框 -->
 		<userChatBottom @submit="submit"></userChatBottom>
 		<!-- 分享 -->
 		<moreShare :show="shareShow" @toggle="toggle"></moreShare>
-		
 	</view>
 </template>
 
@@ -31,6 +35,11 @@
 		},
 		data() {
 			return {
+				scrollTop: 0,
+				style: {
+					contentH: 430,
+					itemH: 0
+				},
 				shareShow: false,
 				comment: {
 					count: 20,
@@ -65,8 +74,31 @@
 		onLoad(e) {
 			// this.initData(JSON.parse(e.detailData))
 			this.getComment()
+			this.initData()
 		},
 		methods: {
+			pageToBottom() {
+				let q = uni.createSelectorQuery()
+				q.select('#scrollView').boundingClientRect()
+				q.selectAll('.comment_item').boundingClientRect()
+				q.exec((res) => {
+					res[1].forEach( (ret) => {
+						this.style.itemH += ret.height
+					})
+					if(this.style.itemH > this.style.contentH) {
+						this.scrollTop = this.style.itemH
+					}
+				})
+			},
+			// 初始化参数
+			initData() {
+				try {
+				    const res = uni.getSystemInfoSync();
+					this.style.contentH = res.windowHeight - uni.upx2px(120)
+				} catch (e) {
+				    // error
+				}
+			},
 			toggle() {
 				this.shareShow=!this.shareShow
  			},
@@ -80,6 +112,7 @@
 						data: data
 					}
 				this.comment.list.push(obj)	
+				this.pageToBottom()
 			},
 			getComment() {
 				let arr = [

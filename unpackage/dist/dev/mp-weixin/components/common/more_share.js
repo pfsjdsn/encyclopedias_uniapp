@@ -148,12 +148,13 @@ var _default =
       providerList: [] };
 
   },
-  mounted: function mounted() {var _this = this;
+  onReady: function onReady() {var _this = this;
     uni.getProvider({
       service: 'share',
       success: function success(e) {
         var data = [];
         for (var i = 0; i < e.provider.length; i++) {
+          console.log(e.provider[i], 'dddddddddddd');
           switch (e.provider[i]) {
             case 'weixin':
               data.push({

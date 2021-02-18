@@ -153,7 +153,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 89));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var userChatBottom = function userChatBottom() {__webpack_require__.e(/*! require.ensure | components/user_chat/user_chat_bottom */ "components/user_chat/user_chat_bottom").then((function () {return resolve(__webpack_require__(/*! @/components/user_chat/user_chat_bottom.vue */ 293));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var detailInfo = function detailInfo() {__webpack_require__.e(/*! require.ensure | components/detail/detail_info */ "components/detail/detail_info").then((function () {return resolve(__webpack_require__(/*! @/components/detail/detail_info.vue */ 307));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var commentList = function commentList() {__webpack_require__.e(/*! require.ensure | components/detail/comment_list */ "components/detail/comment_list").then((function () {return resolve(__webpack_require__(/*! @/components/detail/comment_list.vue */ 314));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var moreShare = function moreShare() {Promise.all(/*! require.ensure | components/common/more_share */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/common/more_share")]).then((function () {return resolve(__webpack_require__(/*! @/components/common/more_share.vue */ 321));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 89));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var userChatBottom = function userChatBottom() {__webpack_require__.e(/*! require.ensure | components/user_chat/user_chat_bottom */ "components/user_chat/user_chat_bottom").then((function () {return resolve(__webpack_require__(/*! @/components/user_chat/user_chat_bottom.vue */ 293));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var detailInfo = function detailInfo() {__webpack_require__.e(/*! require.ensure | components/detail/detail_info */ "components/detail/detail_info").then((function () {return resolve(__webpack_require__(/*! @/components/detail/detail_info.vue */ 307));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var commentList = function commentList() {__webpack_require__.e(/*! require.ensure | components/detail/comment_list */ "components/detail/comment_list").then((function () {return resolve(__webpack_require__(/*! @/components/detail/comment_list.vue */ 314));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var moreShare = function moreShare() {Promise.all(/*! require.ensure | components/common/more_share */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/common/more_share")]).then((function () {return resolve(__webpack_require__(/*! @/components/common/more_share.vue */ 321));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 {
   components: {
     detailInfo: detailInfo,
@@ -163,6 +167,11 @@ var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 8
 
   data: function data() {
     return {
+      scrollTop: 0,
+      style: {
+        contentH: 430,
+        itemH: 0 },
+
       shareShow: false,
       comment: {
         count: 20,
@@ -197,8 +206,31 @@ var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 8
   onLoad: function onLoad(e) {
     // this.initData(JSON.parse(e.detailData))
     this.getComment();
+    this.initData();
   },
-  methods: {
+  methods: _defineProperty({
+    pageToBottom: function pageToBottom() {var _this = this;
+      var q = uni.createSelectorQuery();
+      q.select('#scrollView').boundingClientRect();
+      q.selectAll('.comment_item').boundingClientRect();
+      q.exec(function (res) {
+        res[1].forEach(function (ret) {
+          _this.style.itemH += ret.height;
+        });
+        if (_this.style.itemH > _this.style.contentH) {
+          _this.scrollTop = _this.style.itemH;
+        }
+      });
+    },
+    // 初始化参数
+    initData: function initData() {
+      try {
+        var res = uni.getSystemInfoSync();
+        this.style.contentH = res.windowHeight - uni.upx2px(120);
+      } catch (e) {
+        // error
+      }
+    },
     toggle: function toggle() {
       this.shareShow = !this.shareShow;
     },
@@ -212,6 +244,7 @@ var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 8
         data: data };
 
       this.comment.list.push(obj);
+      this.pageToBottom();
     },
     getComment: function getComment() {
       var arr = [
@@ -252,12 +285,12 @@ var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 8
         arr[i].time = _time.default.gettime.gettime(arr[i].time);
         this.comment.list = arr;
       }
-    },
-    initData: function initData(obj) {
-      uni.setNavigationBarTitle({
-        title: obj.title });
+    } }, "initData", function initData(
+  obj) {
+    uni.setNavigationBarTitle({
+      title: obj.title });
 
-    } } };exports.default = _default;
+  }) };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
