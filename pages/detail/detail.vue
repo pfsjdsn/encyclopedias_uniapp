@@ -76,6 +76,14 @@
 			this.getComment()
 			this.initData()
 		},
+		// #ifdef APP-PLUS
+		// onShareAppMessage(res) {
+		//     return {
+		//       title: this.detail.title,
+		//       path: '/pages/detail/detail?detailData' + JSON.stringify(this.detail)
+		//     }
+		// },
+		// #endif
 		methods: {
 			pageToBottom() {
 				let q = uni.createSelectorQuery()

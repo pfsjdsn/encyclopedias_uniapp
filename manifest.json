@@ -70,7 +70,7 @@
     /* 小程序特有相关 */
     "mp-weixin" : {
         "usingComponents" : true,
-        "appid" : "",
+        "appid" : "wxe5bb319991eb0def",
         "setting" : {
             "urlCheck" : false
         }

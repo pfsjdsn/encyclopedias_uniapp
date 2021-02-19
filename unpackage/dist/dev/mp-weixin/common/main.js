@@ -19,8 +19,11 @@ var _config = _interopRequireDefault(__webpack_require__(/*! ./common/config.js 
 var _user = _interopRequireDefault(__webpack_require__(/*! ./common/user.js */ 14));
 
 
-var _lib = _interopRequireDefault(__webpack_require__(/*! ./common/lib.js */ 15));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}_vue.default.config.productionTip = false; // 挂载全局方法
-_vue.default.prototype.config = _config.default;_vue.default.prototype.User = _user.default;_vue.default.prototype.lib = _lib.default;
+var _lib = _interopRequireDefault(__webpack_require__(/*! ./common/lib.js */ 15));
+
+
+var _request = _interopRequireDefault(__webpack_require__(/*! ./common/request.js */ 16));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}_vue.default.config.productionTip = false; // 挂载全局方法
+_vue.default.prototype.config = _config.default;_vue.default.prototype.User = _user.default;_vue.default.prototype.lib = _lib.default;_vue.default.prototype.$http = _request.default;
 
 _App.default.mpType = 'app';
 
@@ -108,10 +111,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     console.log('App Launch');
     console.log(this.config.webUrl, 'app.vue');
     this.lib.demo();
-
     // 网路监听（用户目前断网，切换wifi）
     this.lib.NetWork.On();
     // 更新检测
+    this.lib.Update();
   },
   onShow: function onShow() {
     console.log('App Show');

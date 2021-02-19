@@ -2004,6 +2004,114 @@ var Update = function Update() {};var _default = { NetWork: NetWork, Update: Upd
 
 /***/ }),
 
+/***/ 16:
+/*!**************************************************************!*\
+  !*** E:/我的项目/uni-qiushi/uni_encyclopedias/common/request.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config.js */ 13));
+var _user = _interopRequireDefault(__webpack_require__(/*! ./user.js */ 14));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =
+{
+  config: {
+    baseUrl: _config.default.webUrl,
+    header: _defineProperty({
+      'Content-Type': 'application/json;charset=UTF-8' }, "Content-Type",
+    'application/x-www-form-urlencoded'),
+
+    data: {},
+    method: "GET",
+    dataType: "json" },
+
+  request: function request() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    options.header = options.header || this.config.header;
+    options.method = options.method || this.config.method;
+    options.dataType = options.dataType || this.config.dataType;
+    options.url = this.config.baseUrl + options.url;
+    // TODO：token增加等操作
+    if (options.token) {
+      // 验证用户是否登录
+      if (!this.checkToken(options.checkToken)) return;
+      // 验证用户操作权限（验证是否绑定手机号码）
+      if (!this.checkAuth(options.checkAuth)) return;
+      options.header.token = _user.default.token;
+    }
+    return uni.request(options);
+  },
+  get: function get(url, data) {var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+    options.url = url;
+    options.data = data;
+    options.method = 'GET';
+    return this.request(options);
+  },
+  post: function post(url, data) {var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+    options.url = url;
+    options.data = data;
+    options.method = 'POST';
+    return this.request(options);
+  },
+  // 上传图片
+  upload: function upload(url) {var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    options.url = this.config.baseUrl + url;
+    options.header = options.header || this.config.header;
+    options.fileType = options.fileType || "image";
+    options.formData = options.formData || {};
+    options.filePath = options.filePath;
+    options.name = options.name;
+    // TODO：token增加等操作
+    if (options.token) {
+      // 验证是否登录
+      if (!this.checkToken(options.checkToken)) return;
+      // 验证权限
+      if (!this.checkAuth(options.checkAuth)) return;
+      options.header.token = _user.default.token;
+    }
+
+    return uni.uploadFile(options);
+  },
+  // 错误处理
+  errorCheck: function errorCheck(err, res) {var errfun = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;var resfun = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+    if (err) {
+      typeof errfun === 'function' && errfun();
+      uni.showToast({ title: '加载失败', icon: "none" });
+      return false;
+    }
+    if (res.data.errorCode) {
+      typeof errfun === 'function' && resfun();
+      uni.showToast({ title: res.data.msg, icon: "none" });
+      return false;
+    }
+    return true;
+  },
+  // 验证用户是否登录
+  checkToken: function checkToken(_checkToken) {
+    if (_checkToken && !_user.default.token) {
+      uni.showToast({ title: '请先登录', icon: "none" });
+      uni.navigateTo({
+        url: '/pages/login/login' });
+
+      return false;
+    }
+    return true;
+  },
+  // 验证用户权限
+  checkAuth: function checkAuth(_checkAuth) {
+    if (_checkAuth && !_user.default.userinfo.phone) {
+      uni.showToast({ title: '请先绑定手机号码', icon: "none" });
+      uni.navigateTo({
+        url: '/pages/user-bind-phone/user-bind-phone' });
+
+      return false;
+    }
+    return true;
+  } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
 /***/ 2:
 /*!******************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js ***!
@@ -8082,7 +8190,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 333:
+/***/ 336:
 /*!**********************************************************************************************!*\
   !*** E:/我的项目/uni-qiushi/uni_encyclopedias/components/mpvue-citypicker/city-data/province.js ***!
   \**********************************************************************************************/
@@ -8232,7 +8340,7 @@ provinceData;exports.default = _default;
 
 /***/ }),
 
-/***/ 334:
+/***/ 337:
 /*!******************************************************************************************!*\
   !*** E:/我的项目/uni-qiushi/uni_encyclopedias/components/mpvue-citypicker/city-data/city.js ***!
   \******************************************************************************************/
@@ -9746,7 +9854,7 @@ cityData;exports.default = _default;
 
 /***/ }),
 
-/***/ 335:
+/***/ 338:
 /*!******************************************************************************************!*\
   !*** E:/我的项目/uni-qiushi/uni_encyclopedias/components/mpvue-citypicker/city-data/area.js ***!
   \******************************************************************************************/
@@ -22299,7 +22407,18 @@ areaData;exports.default = _default;
 
 /***/ }),
 
-/***/ 399:
+/***/ 4:
+/*!*******************************************************!*\
+  !*** E:/我的项目/uni-qiushi/uni_encyclopedias/pages.json ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ 402:
 /*!**************************************************************************!*\
   !*** E:/我的项目/uni-qiushi/uni_encyclopedias/components/uni-icons/icons.js ***!
   \**************************************************************************/
@@ -22441,29 +22560,18 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 4:
-/*!*******************************************************!*\
-  !*** E:/我的项目/uni-qiushi/uni_encyclopedias/pages.json ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ 74:
+/***/ 75:
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! regenerator-runtime */ 75);
+module.exports = __webpack_require__(/*! regenerator-runtime */ 76);
 
 /***/ }),
 
-/***/ 75:
+/***/ 76:
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -22494,7 +22602,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 76);
+module.exports = __webpack_require__(/*! ./runtime */ 77);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -22511,7 +22619,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 76:
+/***/ 77:
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -23243,7 +23351,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 89:
+/***/ 90:
 /*!***********************************************************!*\
   !*** E:/我的项目/uni-qiushi/uni_encyclopedias/common/time.js ***!
   \***********************************************************/

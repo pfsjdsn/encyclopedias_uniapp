@@ -16,7 +16,8 @@
 							</view>
 						</block>
 						<view class="uni-uploader__input-box">
-							<view class="uni-uploader__input" @tap="chooseImage"></view>
+							<view class="uni-uploader__input" @tap="chooseImage">
+							</view>
 						</view>
 					</view>
 				</view>

@@ -82,7 +82,7 @@
 			// 下拉刷新 
 			async getList() {
 				let url = `topic/${this.topicInfo.id}/post/${this.tabList[this.tabIndex].page}`
-				let [err, res] = await this.$http.get(url, {}, {token});
+				let [err, res] = await this.$http.get(url, {}, {token:true});
 				// 错误处理
 				if(!this.$http.errorCheck(err, res)) {
 					return this.tabList[this.tabIndex].loadText = '上拉加载更多';
@@ -131,6 +131,7 @@
 				this.tabList[this.tabIndex].page++;
 				// 获取数据
 				this.getList();
+				
 				
 				
 			}
