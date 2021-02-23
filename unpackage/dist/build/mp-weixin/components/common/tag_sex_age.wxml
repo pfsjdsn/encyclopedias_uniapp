@@ -1,0 +1,1 @@
+<view class="{{['iconfont age data-v-49e8fc6c',sex==0?'iconnan':'iconnv2']}}">{{age}}</view>

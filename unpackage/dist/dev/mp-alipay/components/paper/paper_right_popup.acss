@@ -1,0 +1,29 @@
+.paper_right_popup_mask.data-v-6ec9cde8 {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1999;
+}
+.paper_right_popup.data-v-6ec9cde8 {
+  position: fixed;
+  right: 0;
+  top: 10rpx;
+  background-color: #fff;
+  z-index: 200;
+  width: 55%;
+  box-shadow: 1rpx 1rpx 20rpx 2rpx #ccc;
+}
+.paper_right_popup > view.data-v-6ec9cde8 {
+  padding: 20rpx;
+  font-size: 35rpx;
+}
+.paper_right_popup > view > view.data-v-6ec9cde8 {
+  margin: 0 10rpx 0 0;
+  font-weight: bold;
+}
+.paper_right_popup .paper_right_popup_h.data-v-6ec9cde8 {
+  background-color: #eee;
+}
+

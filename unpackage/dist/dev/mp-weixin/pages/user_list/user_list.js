@@ -128,7 +128,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 177));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var swiperTabHead = function swiperTabHead() {__webpack_require__.e(/*! require.ensure | components/index/swiper_tab_header */ "components/index/swiper_tab_header").then((function () {return resolve(__webpack_require__(/*! @/components/index/swiper_tab_header.vue */ 170));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var userList = function userList() {__webpack_require__.e(/*! require.ensure | components/user_list/user_list */ "components/user_list/user_list").then((function () {return resolve(__webpack_require__(/*! @/components/user_list/user_list.vue */ 289));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var noThing = function noThing() {__webpack_require__.e(/*! require.ensure | components/common/no_thing */ "components/common/no_thing").then((function () {return resolve(__webpack_require__(/*! @/components/common/no_thing.vue */ 184));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 177));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var swiperTabHead = function swiperTabHead() {__webpack_require__.e(/*! require.ensure | components/index/swiper_tab_header */ "components/index/swiper_tab_header").then((function () {return resolve(__webpack_require__(/*! @/components/index/swiper_tab_header.vue */ 170));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var userList = function userList() {__webpack_require__.e(/*! require.ensure | components/user_list/user_list */ "components/user_list/user_list").then((function () {return resolve(__webpack_require__(/*! @/components/user_list/user_list.vue */ 282));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var noThing = function noThing() {__webpack_require__.e(/*! require.ensure | components/common/no_thing */ "components/common/no_thing").then((function () {return resolve(__webpack_require__(/*! @/components/common/no_thing.vue */ 184));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -191,56 +191,56 @@ __webpack_require__.r(__webpack_exports__);
         loadText: '上拉加载更多',
         list: [
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '昵称',
           age: 20,
           sex: 0,
           isFollow: true },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '昵称',
           age: 20,
           sex: 1,
           isFollow: false },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '昵称',
           age: 20,
           sex: 0,
           isFollow: true },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '昵称',
           age: 20,
           sex: 1,
           isFollow: false },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '昵称',
           age: 20,
           sex: 0,
           isFollow: true },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '昵称',
           age: 20,
           sex: 1,
           isFollow: false },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '昵称',
           age: 20,
           sex: 0,
           isFollow: true },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '昵称',
           age: 20,
           sex: 1,
@@ -252,14 +252,14 @@ __webpack_require__.r(__webpack_exports__);
         loadText: '上拉加载更多',
         list: [
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '昵称',
           age: 20,
           sex: 0,
           isFollow: true },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '昵称',
           age: 20,
           sex: 1,
@@ -271,14 +271,14 @@ __webpack_require__.r(__webpack_exports__);
         loadText: '上拉加载更多',
         list: [
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '昵称',
           age: 20,
           sex: 0,
           isFollow: true },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '昵称',
           age: 20,
           sex: 1,
@@ -314,7 +314,7 @@ __webpack_require__.r(__webpack_exports__);
       this.newsList[index].loadText = '加载中...';
       setTimeout(function () {
         var obj = {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: 'aaaaaaaaaaa',
           age: 20,
           sex: 0,

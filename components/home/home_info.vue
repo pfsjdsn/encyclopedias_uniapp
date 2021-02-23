@@ -23,7 +23,7 @@
 		methods:{
 			toUserSpace(){
 				uni.navigateTo({
-					url:'../../pages/user_space/user_space'
+					url:'../../pages/user_space/user_space?userName=' + this.homeInfo.userName
 				})
 			},
 		}

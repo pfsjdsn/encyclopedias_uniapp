@@ -65,16 +65,16 @@
 				let arr = [
 					{
 						isMe: false,
-						userPic: '../../static/demo/userpic/11.jpg',
+						userPic: '../../static/common/nothing.png',
 						type: 'text',
 						data: '哈哈',
 						time: '1554970012'
 					},
 					{
 						isMe: true,
-						userPic: '../../static/demo/userpic/11.jpg',
+						userPic: '../../static/common/nothing.png',
 						type: 'img',
-						data: '../../static/demo/userpic/11.jpg',
+						data: '../../static/common/nothing.png',
 						time: '1554970814'
 					}
 				]
@@ -88,7 +88,7 @@
 				let now = new Date().getTime()
 				let obj = {
 						isMe: true,
-						userPic: '../../static/demo/userpic/11.jpg',
+						userPic: '../../static/common/nothing.png',
 						type: 'text',
 						data: data,
 						time: now,

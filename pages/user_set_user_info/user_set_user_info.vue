@@ -77,7 +77,7 @@
 				emotion: '未婚',
 				job: 'IT',
 				birthday: '1987-02-07',
-				userPic: '../../static/demo/userpic/11.jpg',
+				userPic: '../../static/common/nothing.png',
 				pickerValueDefault: [0, 0 ,1],
 				pickerText: '广东省-深圳市-南山区',
 			}

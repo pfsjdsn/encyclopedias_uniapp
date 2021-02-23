@@ -4,7 +4,7 @@
 			<!-- 未登录  -->
 			<view class="u_f_ajc">登录仿糗百，体验更多功能</view>
 			<!-- 第三方登录 -->
-			<otherLogin></otherLogin>
+			<!-- <otherLogin></otherLogin> -->
 			<!-- 账号密码登录 -->
 			<view class="u_f_ajc" @tap="openLogin">
 				账号密码登录
@@ -19,7 +19,7 @@
 		<homeData :homeData="homeData"></homeData>
 		<!-- 广告位 -->
 		<view class="home_adv u_f_ajc">
-			<image  src="../../static/demo/demo20.jpg" 
+			<image  src="../../static/common/nothing.png" 
 			mode="widthFix" lazy-load></image>
 		</view>
 		<!-- 功能列表 -->
@@ -34,13 +34,13 @@
 <script>
 	import homeListItem from '@/components/home/home_list_item.vue';
 	import homeInfo from '@/components/home/home_info.vue';
-	import otherLogin from '@/components/home/other_login.vue';
+	// import otherLogin from '@/components/home/other_login.vue';
 	import homeData from '@/components/home/home_data.vue';
 	export default {
 		components: {
 			homeListItem,
 			homeInfo,
-			otherLogin,
+			// otherLogin,
 			homeData
 		},
 		data() {
@@ -53,8 +53,8 @@
 					{name: '收藏', num: 0},
 				],
 				homeInfo: {
-					userPic: '../../static/demo/userpic/11.jpg',
-					userName: '哈哈',
+					userPic: '../../static/common/nothing.png',
+					userName: '哈哈111',
 					totalNum: 0,
 					todayNum: 0,
 				},

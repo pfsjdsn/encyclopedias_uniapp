@@ -157,7 +157,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 90));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var userChatBottom = function userChatBottom() {__webpack_require__.e(/*! require.ensure | components/user_chat/user_chat_bottom */ "components/user_chat/user_chat_bottom").then((function () {return resolve(__webpack_require__(/*! @/components/user_chat/user_chat_bottom.vue */ 296));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var detailInfo = function detailInfo() {__webpack_require__.e(/*! require.ensure | components/detail/detail_info */ "components/detail/detail_info").then((function () {return resolve(__webpack_require__(/*! @/components/detail/detail_info.vue */ 310));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var commentList = function commentList() {__webpack_require__.e(/*! require.ensure | components/detail/comment_list */ "components/detail/comment_list").then((function () {return resolve(__webpack_require__(/*! @/components/detail/comment_list.vue */ 317));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var moreShare = function moreShare() {Promise.all(/*! require.ensure | components/common/more_share */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/common/more_share")]).then((function () {return resolve(__webpack_require__(/*! @/components/common/more_share.vue */ 324));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 90));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var userChatBottom = function userChatBottom() {__webpack_require__.e(/*! require.ensure | components/user_chat/user_chat_bottom */ "components/user_chat/user_chat_bottom").then((function () {return resolve(__webpack_require__(/*! @/components/user_chat/user_chat_bottom.vue */ 289));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var detailInfo = function detailInfo() {__webpack_require__.e(/*! require.ensure | components/detail/detail_info */ "components/detail/detail_info").then((function () {return resolve(__webpack_require__(/*! @/components/detail/detail_info.vue */ 303));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var commentList = function commentList() {__webpack_require__.e(/*! require.ensure | components/detail/comment_list */ "components/detail/comment_list").then((function () {return resolve(__webpack_require__(/*! @/components/detail/comment_list.vue */ 310));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var moreShare = function moreShare() {Promise.all(/*! require.ensure | components/common/more_share */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/common/more_share")]).then((function () {return resolve(__webpack_require__(/*! @/components/common/more_share.vue */ 317));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 {
   components: {
     detailInfo: detailInfo,
@@ -178,14 +178,14 @@ var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 9
         list: [] },
 
       detail: {
-        userPic: '../../static/demo/userpic/12.jpg',
+        userPic: '../../static/common/nothing.png',
         userName: '哈哈',
         sex: 0, //0 男 1女
         age: 25,
         isFollow: false,
         title: '标题',
-        titlePic: '../../static/demo/datapic/13.jpg',
-        morePic: ['../../static/demo/datapic/13.jpg', '../../static/demo/datapic/13.jpg', '../../static/demo/datapic/13.jpg', '../../static/demo/datapic/13.jpg'],
+        titlePic: '../../static/common/nothing.png',
+        morePic: ['../../static/common/nothing.png', '../../static/common/nothing.png', '../../static/common/nothing.png', '../../static/common/nothing.png'],
         video: false,
         share: false,
         path: '深圳 龙岗',
@@ -205,8 +205,9 @@ var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 9
   },
   onLoad: function onLoad(e) {
     // this.initData(JSON.parse(e.detailData))
+    this.initData(e.detailData);
     this.getComment();
-    this.initData();
+    // this.initData()
   },
 
 

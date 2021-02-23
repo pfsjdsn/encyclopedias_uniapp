@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "小纸条",
+  "pullRefresh": true,
+  "usingComponents": {
+    "paper-list": "/components/paper/paper_list",
+    "paper-right-popup": "/components/paper/paper_right_popup",
+    "load-more": "/components/common/load_more"
+  }
+}

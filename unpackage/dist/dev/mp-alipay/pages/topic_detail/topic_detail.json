@@ -1,0 +1,9 @@
+{
+  "pullRefresh": true,
+  "usingComponents": {
+    "topic-info": "/components/topic/topic_info",
+    "swiper-tab-head": "/components/index/swiper_tab_header",
+    "common-list": "/components/common/common_list",
+    "load-more": "/components/common/load_more"
+  }
+}

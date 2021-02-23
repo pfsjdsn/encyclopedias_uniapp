@@ -46,14 +46,14 @@
 					list: [],
 				},
 				detail: {
-					userPic: '../../static/demo/userpic/12.jpg',
+					userPic: '../../static/common/nothing.png',
 					userName: '哈哈',
 					sex: 0, //0 男 1女
 					age: 25,
 					isFollow: false,
 					title: '标题',
-					titlePic: '../../static/demo/datapic/13.jpg',
-					morePic: ['../../static/demo/datapic/13.jpg', '../../static/demo/datapic/13.jpg','../../static/demo/datapic/13.jpg','../../static/demo/datapic/13.jpg'],
+					titlePic: '../../static/common/nothing.png',
+					morePic: ['../../static/common/nothing.png', '../../static/common/nothing.png','../../static/common/nothing.png','../../static/common/nothing.png'],
 					video: false,
 					share: false,
 					path: '深圳 龙岗',
@@ -73,8 +73,9 @@
 		},
 		onLoad(e) {
 			// this.initData(JSON.parse(e.detailData))
+			this.initData(e.detailData)
 			this.getComment()
-			this.initData()
+			// this.initData()
 		},
 		// #ifdef APP-PLUS
 		// onShareAppMessage(res) {

@@ -40,7 +40,7 @@
 		data() {
 			return {
 				topicInfo: {
-					titlePic: "../../static/demo/topicpic/13.jpeg",
+					titlePic: "../../static/common/nothing.png",
 					title: "忆往事，敬余生",
 					desc: "我是描述内容",
 					totalNum: 1000,

@@ -339,7 +339,7 @@
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "canoe_百科",
+		"navigationBarTitleText": "uni百科交友",
 		"navigationBarBackgroundColor": "#fff",
 		"backgroundColor": "#fff"
 	},

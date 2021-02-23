@@ -26,7 +26,6 @@
 		},
 		methods:{
 			mpGetUserInfo(result) {
-				console.log(11111111111111111113)
 				uni.showLoading({ title: '登录中...', mask: true });
 				// 获取失败
 				if (result.detail.errMsg !== 'getUserInfo:ok') {

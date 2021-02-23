@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "内容页",
+  "usingComponents": {
+    "detail-info": "/components/detail/detail_info",
+    "comment-list": "/components/detail/comment_list",
+    "user-chat-bottom": "/components/user_chat/user_chat_bottom",
+    "more-share": "/components/common/more_share"
+  }
+}

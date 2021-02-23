@@ -1,0 +1,25 @@
+.hot_categories.data-v-efb637c2 {
+  border-top: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+  padding: 20rpx;
+}
+.hot_categories .hot_title.data-v-efb637c2 {
+  margin: 0 0 10rpx 0;
+}
+.hot_categories .hot_title .title_tag.data-v-efb637c2 {
+  color: #333;
+  font-size: 32rpx;
+}
+.hot_categories .hot_title .more.data-v-efb637c2 {
+  color: #9e9e9e;
+}
+.hot_categories .hot_tag > view.data-v-efb637c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  background: #ddd;
+  color: #9e9e9e;
+  border-radius: 10rpx;
+  margin: 0 10rpx;
+}
+

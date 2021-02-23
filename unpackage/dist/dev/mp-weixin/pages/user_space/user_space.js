@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 177));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var commonList = function commonList() {__webpack_require__.e(/*! require.ensure | components/common/common_list */ "components/common/common_list").then((function () {return resolve(__webpack_require__(/*! @/components/common/common_list.vue */ 219));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var swiperTabHead = function swiperTabHead() {__webpack_require__.e(/*! require.ensure | components/index/swiper_tab_header */ "components/index/swiper_tab_header").then((function () {return resolve(__webpack_require__(/*! @/components/index/swiper_tab_header.vue */ 170));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var homeData = function homeData() {__webpack_require__.e(/*! require.ensure | components/home/home_data */ "components/home/home_data").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_data.vue */ 212));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var userSpaceHead = function userSpaceHead() {__webpack_require__.e(/*! require.ensure | components/user_space/user_space_head */ "components/user_space/user_space_head").then((function () {return resolve(__webpack_require__(/*! @/components/user_space/user_space_head.vue */ 362));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var userSpaceUserInfo = function userSpaceUserInfo() {Promise.all(/*! require.ensure | components/user_space/user_space_user_info */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/user_space/user_space_user_info")]).then((function () {return resolve(__webpack_require__(/*! @/components/user_space/user_space_user_info.vue */ 369));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var userSpacePopup = function userSpacePopup() {__webpack_require__.e(/*! require.ensure | components/user_space/user_space_popup */ "components/user_space/user_space_popup").then((function () {return resolve(__webpack_require__(/*! @/components/user_space/user_space_popup.vue */ 376));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 177));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var commonList = function commonList() {__webpack_require__.e(/*! require.ensure | components/common/common_list */ "components/common/common_list").then((function () {return resolve(__webpack_require__(/*! @/components/common/common_list.vue */ 212));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var swiperTabHead = function swiperTabHead() {__webpack_require__.e(/*! require.ensure | components/index/swiper_tab_header */ "components/index/swiper_tab_header").then((function () {return resolve(__webpack_require__(/*! @/components/index/swiper_tab_header.vue */ 170));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var homeData = function homeData() {__webpack_require__.e(/*! require.ensure | components/home/home_data */ "components/home/home_data").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_data.vue */ 205));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var userSpaceHead = function userSpaceHead() {__webpack_require__.e(/*! require.ensure | components/user_space/user_space_head */ "components/user_space/user_space_head").then((function () {return resolve(__webpack_require__(/*! @/components/user_space/user_space_head.vue */ 355));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var userSpaceUserInfo = function userSpaceUserInfo() {Promise.all(/*! require.ensure | components/user_space/user_space_user_info */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/user_space/user_space_user_info")]).then((function () {return resolve(__webpack_require__(/*! @/components/user_space/user_space_user_info.vue */ 362));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var userSpacePopup = function userSpacePopup() {__webpack_require__.e(/*! require.ensure | components/user_space/user_space_popup */ "components/user_space/user_space_popup").then((function () {return resolve(__webpack_require__(/*! @/components/user_space/user_space_popup.vue */ 369));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -190,7 +190,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
         loadText: '上拉加载更多',
         list: [
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '哈哈',
           sex: 0, //0 男 1女
           age: 25,
@@ -205,7 +205,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
           goodNum: 20 },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '哈哈',
           sex: 0, //0 男 1女
           age: 25,
@@ -220,7 +220,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
           goodNum: 20 },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '哈哈',
           sex: 0, //0 男 1女
           age: 25,
@@ -235,7 +235,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
           goodNum: 20 },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '哈哈',
           sex: 0, //0 男 1女
           age: 25,
@@ -255,7 +255,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
         loadText: '上拉加载更多',
         list: [
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '哈哈',
           sex: 0, //0 男 1女
           age: 25,
@@ -270,7 +270,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
           goodNum: 20 },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '哈哈',
           sex: 0, //0 男 1女
           age: 25,
@@ -285,7 +285,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
           goodNum: 20 },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '哈哈',
           sex: 0, //0 男 1女
           age: 25,
@@ -300,7 +300,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
           goodNum: 20 },
 
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '哈哈',
           sex: 0, //0 男 1女
           age: 25,
@@ -331,7 +331,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
       userInfo: {
         newBgImg: '',
         bgImg: 1,
-        userPic: '../../static/demo/userpic/11.jpg',
+        userPic: '../../static/common/nothing.png',
         userName: '昵称',
         sex: 0,
         age: 20,
@@ -344,6 +344,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
         emotion: '已婚' } };
 
 
+  },
+  onLoad: function onLoad(option) {
+    this.userInfo.userName = option.userName;
   },
   // 触底事件
   onReachBottom: function onReachBottom() {
@@ -376,13 +379,13 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
       this.tabList[this.tabIndex].loadText = '加载中...';
       setTimeout(function () {
         var obj = {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '哈哈',
           sex: 0, //0 男 1女
           age: 25,
           isFollow: false,
           title: '标题',
-          titlePic: '../../static/demo/datapic/13.jpg',
+          titlePic: '../../static/common/nothing.png',
           video: false,
           share: false,
           path: '深圳 龙岗',

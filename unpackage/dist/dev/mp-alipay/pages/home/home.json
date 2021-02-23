@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "我的",
+  "usingComponents": {
+    "home-list-item": "/components/home/home_list_item",
+    "home-info": "/components/home/home_info",
+    "home-data": "/components/home/home_data"
+  }
+}

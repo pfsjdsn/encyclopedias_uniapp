@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "聊天页",
+  "usingComponents": {
+    "user-chat-bottom": "/components/user_chat/user_chat_bottom",
+    "user-chat-list": "/components/user_chat/user_chat_list"
+  }
+}

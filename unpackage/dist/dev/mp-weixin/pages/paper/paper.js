@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var paperList = function paperList() {__webpack_require__.e(/*! require.ensure | components/paper/paper_list */ "components/paper/paper_list").then((function () {return resolve(__webpack_require__(/*! @/components/paper/paper_list.vue */ 247));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var paperRightPopup = function paperRightPopup() {__webpack_require__.e(/*! require.ensure | components/paper/paper_right_popup */ "components/paper/paper_right_popup").then((function () {return resolve(__webpack_require__(/*! @/components/paper/paper_right_popup.vue */ 254));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 177));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var paperList = function paperList() {__webpack_require__.e(/*! require.ensure | components/paper/paper_list */ "components/paper/paper_list").then((function () {return resolve(__webpack_require__(/*! @/components/paper/paper_list.vue */ 240));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var paperRightPopup = function paperRightPopup() {__webpack_require__.e(/*! require.ensure | components/paper/paper_right_popup */ "components/paper/paper_right_popup").then((function () {return resolve(__webpack_require__(/*! @/components/paper/paper_right_popup.vue */ 247));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 177));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -165,52 +165,52 @@ __webpack_require__.r(__webpack_exports__);
       list:
       [
       {
-        userPic: '../../static/demo/topicpic/12.jpeg',
+        userPic: '../../static/common/nothing.png',
         userName: '昵称',
         time: '10:21',
         data: '我是信息',
         noReadNum: 123 },
 
       {
-        userPic: '../../static/demo/topicpic/12.jpeg',
+        userPic: '../../static/common/nothing.png',
         userName: '昵称',
         time: '10:21',
         data: '我是信息',
         noReadNum: 0 },
       {
-        userPic: '../../static/demo/topicpic/12.jpeg',
+        userPic: '../../static/common/nothing.png',
         userName: '昵称',
         time: '10:21',
         data: '我是信息',
         noReadNum: 0 },
       {
-        userPic: '../../static/demo/topicpic/12.jpeg',
+        userPic: '../../static/common/nothing.png',
         userName: '昵称',
         time: '10:21',
         data: '我是信息',
         noReadNum: 123 },
 
       {
-        userPic: '../../static/demo/topicpic/12.jpeg',
+        userPic: '../../static/common/nothing.png',
         userName: '昵称',
         time: '10:21',
         data: '我是信息',
         noReadNum: 123 },
 
       {
-        userPic: '../../static/demo/topicpic/12.jpeg',
+        userPic: '../../static/common/nothing.png',
         userName: '昵称',
         time: '10:21',
         data: '我是信息',
         noReadNum: 0 },
       {
-        userPic: '../../static/demo/topicpic/12.jpeg',
+        userPic: '../../static/common/nothing.png',
         userName: '昵称',
         time: '10:21',
         data: '我是信息',
         noReadNum: 0 },
       {
-        userPic: '../../static/demo/topicpic/12.jpeg',
+        userPic: '../../static/common/nothing.png',
         userName: '昵称',
         time: '10:21',
         data: '我是信息',
@@ -265,7 +265,7 @@ __webpack_require__.r(__webpack_exports__);
       this.loadText = '加载中...';
       setTimeout(function () {
         var obj = {
-          userPic: '../../static/demo/topicpic/12.jpeg',
+          userPic: '../../static/common/nothing.png',
           userName: '基石无人机吉大南人人众人人校压顶fdsfsfdf',
           time: '10:21',
           data: '我是信息',
@@ -282,14 +282,14 @@ __webpack_require__.r(__webpack_exports__);
         // 服务器获取数据
         var arr = [
         {
-          userPic: '../../static/demo/topicpic/12.jpeg',
+          userPic: '../../static/common/nothing.png',
           userName: '124',
           time: '10:21',
           data: '111111',
           noReadNum: 123 },
 
         {
-          userPic: '../../static/demo/topicpic/12.jpeg',
+          userPic: '../../static/common/nothing.png',
           userName: 'ff',
           time: '10:21',
           data: '我是信息',

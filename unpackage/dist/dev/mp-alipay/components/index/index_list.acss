@@ -1,0 +1,56 @@
+.index_list.data-v-15fe0283 {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.header_container .header_user_info.data-v-15fe0283 {
+  color: #999;
+}
+.header_container .header_user_info image.data-v-15fe0283 {
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 100%;
+  margin: 0 10rpx 0 0;
+}
+.header_container .header_user_follow.data-v-15fe0283 {
+  background-color: #f5f2f5;
+  border-radius: 5rpx;
+  padding: 0 10rpx;
+}
+.title_container.data-v-15fe0283 {
+  padding: 15rpx;
+  font-size: 32rpx;
+}
+.image_container.data-v-15fe0283 {
+  position: relative;
+  padding: 15rpx;
+  color: #fff;
+}
+.image_container image.data-v-15fe0283 {
+  width: 100%;
+  border-radius: 20rpx;
+}
+.image_container .iconbofang.data-v-15fe0283 {
+  position: absolute;
+  font-size: 140rpx;
+}
+.image_container .play_count.data-v-15fe0283 {
+  position: absolute;
+  background: rgba(51, 51, 51, 0.72);
+  bottom: 20rpx;
+  right: 20rpx;
+  border-radius: 40rpx;
+  font-size: 25rpx;
+  padding: 0 10rpx;
+}
+.info_container.data-v-15fe0283 {
+  padding: 15rpx 0;
+  color: #999;
+}
+.info_container .info_left view.data-v-15fe0283,
+.info_container .info_right view.data-v-15fe0283 {
+  margin: 0 10rpx;
+}
+.info_container .info_left .active.data-v-15fe0283 {
+  color: orange;
+}
+

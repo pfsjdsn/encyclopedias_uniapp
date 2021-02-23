@@ -1,12 +1,61 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/home/home",
+    "pages/news/news",
+    "pages/paper/paper",
+    "pages/search/search",
+    "pages/publish/publish",
+    "pages/topic_classification/topic_classification",
+    "pages/topic_detail/topic_detail",
+    "pages/user_list/user_list",
+    "pages/user_chat/user_chat",
+    "pages/detail/detail",
+    "pages/user_set/user_set",
+    "pages/user_set_repassword/user_set_repassword",
+    "pages/user_set_email/user_set_email",
+    "pages/user_set_user_info/user_set_user_info",
+    "pages/user_set_help/user_set_help",
+    "pages/user_set_about/user_set_about",
+    "pages/login/login",
+    "pages/user_space/user_space"
   ],
   "subPackages": [],
   "window": {
-    "defaultTitle": "uni-app",
-    "titleBarColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "defaultTitle": "canoe_百科",
+    "titleBarColor": "#fff",
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "textColor": "#ADADAD",
+    "selectedColor": "#fee42a",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "糗事",
+        "icon": "/static/tabbar/index.png",
+        "activeIcon": "/static/tabbar/index_o.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "name": "动态",
+        "icon": "/static/tabbar/news.png",
+        "activeIcon": "/static/tabbar/news_o.png"
+      },
+      {
+        "pagePath": "pages/paper/paper",
+        "name": "小纸条",
+        "icon": "/static/tabbar/paper.png",
+        "activeIcon": "/static/tabbar/paper_o.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "name": "我的",
+        "icon": "/static/tabbar/home.png",
+        "activeIcon": "/static/tabbar/home_o.png"
+      }
+    ]
   },
   "usingComponents": {}
 }

@@ -1,0 +1,1 @@
+<view class="home_data u_f_ac data-v-41b27256"><block class="data-v-41b27256" a:for="{{homeData}}" a:for-item="item" a:for-index="index" a:key="index"><view class="u_f1 u_f_ajc u_f_dc data-v-41b27256"><view class="data-v-41b27256">{{item.num+''}}</view>{{item.name}}</view></block></view>

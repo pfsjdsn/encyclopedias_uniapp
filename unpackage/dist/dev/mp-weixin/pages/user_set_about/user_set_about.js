@@ -145,15 +145,25 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
 {
   components: {
     homeListItem: homeListItem },
 
   data: function data() {
     return {
+      version: '',
       list: [
       { icon: '', name: '新版本检测', clickType: '', url: '' },
       { icon: '', name: '仿糗事百科用户协议', clickType: '', url: '' }] };
+
+
+  },
+  onLoad: function onLoad() {
+
+
+
 
 
   },

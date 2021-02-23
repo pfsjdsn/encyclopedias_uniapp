@@ -110,7 +110,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   onLaunch: function onLaunch() {
     console.log('App Launch');
     console.log(this.config.webUrl, 'app.vue');
-    this.lib.demo();
+    // this.lib.demo()
     // 网路监听（用户目前断网，切换wifi）
     this.lib.NetWork.On();
     // 更新检测

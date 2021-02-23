@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniStatusBar = function uniStatusBar() {__webpack_require__.e(/*! require.ensure | components/uni-status-bar/uni-status-bar */ "components/uni-status-bar/uni-status-bar").then((function () {return resolve(__webpack_require__(/*! @/components/uni-status-bar/uni-status-bar.vue */ 355));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var otherLogin = function otherLogin() {__webpack_require__.e(/*! require.ensure | components/home/other_login */ "components/home/other_login").then((function () {return resolve(__webpack_require__(/*! @/components/home/other_login.vue */ 205));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniStatusBar = function uniStatusBar() {__webpack_require__.e(/*! require.ensure | components/uni-status-bar/uni-status-bar */ "components/uni-status-bar/uni-status-bar").then((function () {return resolve(__webpack_require__(/*! @/components/uni-status-bar/uni-status-bar.vue */ 348));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 
 
 
@@ -182,12 +182,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-{
+// import otherLogin from '@/components/home/other_login.vue';
+var _default = {
   components: {
-    uniStatusBar: uniStatusBar,
-    otherLogin: otherLogin },
-
+    uniStatusBar: uniStatusBar
+    // otherLogin
+  },
   data: function data() {
     return {
       status: false, //false账号密码登录 ，true手机验证码登录
@@ -270,8 +270,14 @@ __webpack_require__.r(__webpack_exports__);
     },
     // 提交登录 
     submit: function submit() {
+      var pages = getCurrentPages(); //获取所有页面栈实例列表
+      var nowPage = pages[pages.length - 1]; //当前页页面实例
+      var prevPage = pages[pages.length - 2]; //上一页页面实例
       // 账号密码登录
       if (!this.status) {
+        prevPage.$vm.isLogin = true; //修改上一页data里面的isLogin
+        prevPage.$vm.homeInfo.userName = this.userName;
+        this.back();
         return;
       }
       // 验证码登录 
@@ -284,6 +290,9 @@ __webpack_require__.r(__webpack_exports__);
         return;
       }
       console.log('提交登录');
+      prevPage.$vm.isLogin = true; //修改上一页data里面的isLogin
+      prevPage.$vm.homeInfo.userName = this.phone;
+      this.back();
     },
     // 返回上一步
     back: function back() {

@@ -1,0 +1,12 @@
+.u-comment_list_child.data-v-27eefade {
+  padding: 20rpx;
+  background: #f4f4f4;
+  border-bottom: 1rpx solid #eee;
+  box-sizing: border-box;
+  margin: 0 0 0 70rpx;
+  width: auto;
+}
+.uni-comment-face image.data-v-27eefade {
+  height: 100%!important;
+}
+

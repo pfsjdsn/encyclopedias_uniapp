@@ -41,12 +41,12 @@
 					{	loadText: '上拉加载更多',
 						list: [
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								isFollow: true,
 								title: '我是标题',
 								type: 'img', // img： 图文， video: 视频 
-								title_pic: '../../static/demo/datapic/11.jpg',
+								title_pic: '../../static/common/nothing.png',
 								infoNum: {
 									index: 1, // 0: 无操作， 1：顶， ２： 踩
 									dingNum: 10,
@@ -56,14 +56,14 @@
 								shareNum: 10,
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								isFollow: false,
 								title: '我是标题',
 								type: 'video', // img： 图文， video: 视频 
 								playNum: '20w',
 								long: '2:47',
-								title_pic: '../../static/demo/datapic/11.jpg',
+								title_pic: '../../static/common/nothing.png',
 								infoNum: {
 									index: 1, // 0: 无操作， 1：顶， ２： 踩
 									dingNum: 10,
@@ -77,12 +77,12 @@
 					{	loadText: '上拉加载更多',
 						list: [
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								isFollow: true,
 								title: '我是标题',
 								type: 'img', // img： 图文， video: 视频 
-								title_pic: '../../static/demo/datapic/11.jpg',
+								title_pic: '../../static/common/nothing.png',
 								infoNum: {
 									index: 1, // 0: 无操作， 1：顶， ２： 踩
 									dingNum: 10,
@@ -96,12 +96,12 @@
 					{	loadText: '上拉加载更多',
 						list: [
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								isFollow: true,
 								title: '我是标题',
 								type: 'img', // img： 图文， video: 视频 
-								title_pic: '../../static/demo/datapic/11.jpg',
+								title_pic: '../../static/common/nothing.png',
 								infoNum: {
 									index: 0, // 0: 无操作， 1：顶， ２： 踩
 									dingNum: 10,
@@ -115,12 +115,12 @@
 					{	loadText: '上拉加载更多',
 						list: [
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								isFollow: true,
 								title: '我是标题',
 								type: 'img', // img： 图文， video: 视频 
-								title_pic: '../../static/demo/datapic/11.jpg',
+								title_pic: '../../static/common/nothing.png',
 								infoNum: {
 									index: 0, // 0: 无操作， 1：顶， ２： 踩
 									dingNum: 10,
@@ -134,12 +134,12 @@
 					{	loadText: '上拉加载更多',
 						list: [
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								isFollow: true,
 								title: '我是标题',
 								type: 'img', // img： 图文， video: 视频 
-								title_pic: '../../static/demo/datapic/11.jpg',
+								title_pic: '../../static/common/nothing.png',
 								infoNum: {
 									index: 0, // 0: 无操作， 1：顶， ２： 踩
 									dingNum: 10,
@@ -198,12 +198,12 @@
 				this.newsList[index].loadText = '加载中...'
 				setTimeout(() => {
 					let obj = {
-						userPic: '../../static/demo/userpic/12.jpg',
+						userPic: '../../static/common/nothing.png',
 						userName: '昵称',
 						isFollow: true,
 						title: '我是标题',
 						type: 'img', // img： 图文， video: 视频 
-						title_pic: '../../static/demo/datapic/11.jpg',
+						title_pic: '../../static/common/nothing.png',
 						infoNum: {
 							index: 0, // 0: 无操作， 1：顶， ２： 踩
 							dingNum: 10,

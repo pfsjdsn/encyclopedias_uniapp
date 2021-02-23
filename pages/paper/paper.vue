@@ -33,52 +33,52 @@
 				list: 
 				[
 					{
-						userPic: '../../static/demo/topicpic/12.jpeg',
+						userPic: '../../static/common/nothing.png',
 						userName: '昵称',
 						time: '10:21',
 						data: '我是信息',
 						noReadNum: 123,
 					},
 					{
-						userPic: '../../static/demo/topicpic/12.jpeg',
+						userPic: '../../static/common/nothing.png',
 						userName: '昵称',
 						time: '10:21',
 						data: '我是信息',
 						noReadNum: 0,
 					},{
-						userPic: '../../static/demo/topicpic/12.jpeg',
+						userPic: '../../static/common/nothing.png',
 						userName: '昵称',
 						time: '10:21',
 						data: '我是信息',
 						noReadNum: 0,
 					},{
-						userPic: '../../static/demo/topicpic/12.jpeg',
+						userPic: '../../static/common/nothing.png',
 						userName: '昵称',
 						time: '10:21',
 						data: '我是信息',
 						noReadNum: 123,
 					},
 					{
-						userPic: '../../static/demo/topicpic/12.jpeg',
+						userPic: '../../static/common/nothing.png',
 						userName: '昵称',
 						time: '10:21',
 						data: '我是信息',
 						noReadNum: 123,
 					},
 					{
-						userPic: '../../static/demo/topicpic/12.jpeg',
+						userPic: '../../static/common/nothing.png',
 						userName: '昵称',
 						time: '10:21',
 						data: '我是信息',
 						noReadNum: 0,
 					},{
-						userPic: '../../static/demo/topicpic/12.jpeg',
+						userPic: '../../static/common/nothing.png',
 						userName: '昵称',
 						time: '10:21',
 						data: '我是信息',
 						noReadNum: 0,
 					},{
-						userPic: '../../static/demo/topicpic/12.jpeg',
+						userPic: '../../static/common/nothing.png',
 						userName: '昵称',
 						time: '10:21',
 						data: '我是信息',
@@ -133,7 +133,7 @@
 				this.loadText = '加载中...'
 				setTimeout(() => {
 					let obj = {
-						userPic: '../../static/demo/topicpic/12.jpeg',
+						userPic: '../../static/common/nothing.png',
 						userName: '基石无人机吉大南人人众人人校压顶fdsfsfdf',
 						time: '10:21',
 						data: '我是信息',
@@ -150,14 +150,14 @@
 					// 服务器获取数据
 					let arr = [
 						{
-							userPic: '../../static/demo/topicpic/12.jpeg',
+							userPic: '../../static/common/nothing.png',
 							userName: '124',
 							time: '10:21',
 							data: '111111',
 							noReadNum: 123,
 						},
 						{
-							userPic: '../../static/demo/topicpic/12.jpeg',
+							userPic: '../../static/common/nothing.png',
 							userName: 'ff',
 							time: '10:21',
 							data: '我是信息',

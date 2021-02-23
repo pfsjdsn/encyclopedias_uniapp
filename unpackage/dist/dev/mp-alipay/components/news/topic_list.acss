@@ -1,0 +1,19 @@
+.recent_updates_list.data-v-329f1602 {
+  padding: 20rpx 0;
+  font-size: 32rpx;
+  border: 1rpx solid #eee;
+}
+.recent_updates_list image.data-v-329f1602 {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+  margin: 0 20rpx 0 0;
+}
+.recent_updates_list .topic_name.data-v-329f1602 {
+  color: #333;
+  font-size: 32rpx;
+}
+.recent_updates_list > view > view.data-v-329f1602 {
+  color: #a4a4a4;
+}
+

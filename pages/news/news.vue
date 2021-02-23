@@ -65,9 +65,9 @@
 				tabIndex: 0,
 				topic: {
 					swiper: [
-						{src: '../../static/demo/banner1.jpg'},
-						{src: '../../static/demo/banner1.jpg'},
-						{src: '../../static/demo/banner1.jpg'}
+						{src: '../../static/common/nothing.png'},
+						{src: '../../static/common/nothing.png'},
+						{src: '../../static/common/nothing.png'}
 					],
 					nav: [
 						{name: '最新'},
@@ -80,21 +80,21 @@
 					recent_updates_list: 
 					[
 						{
-						titlePic: '../../static/demo/topicpic/13.jpeg',
+						titlePic: '../../static/common/nothing.png',
 						title: '话题名称',
 						desc: '我是话题描述',
 						totalNum: 10,
 						todayNum: 5,
 						},
 						{
-						titlePic: '../../static/demo/topicpic/13.jpeg',
+						titlePic: '../../static/common/nothing.png',
 						title: '话题名称',
 						desc: '我是话题描述',
 						totalNum: 10,
 						todayNum: 5,
 						},
 						{
-						titlePic: '../../static/demo/topicpic/13.jpeg',
+						titlePic: '../../static/common/nothing.png',
 						title: '话题名称',
 						desc: '我是话题描述',
 						totalNum: 10,
@@ -116,7 +116,7 @@
 					list: [
 						// 文字
 						{
-							userPic: '../../static/demo/userpic/12.jpg',
+							userPic: '../../static/common/nothing.png',
 							userName: '哈哈',
 							sex: 0, //0 男 1女
 							age: 25,
@@ -133,13 +133,13 @@
 						},
 						// 图文
 						{
-							userPic: '../../static/demo/userpic/12.jpg',
+							userPic: '../../static/common/nothing.png',
 							userName: '哈哈',
 							sex: 0, //0 男 1女
 							age: 25,
 							isFollow: false,
 							title: '标题',
-							titlePic: '../../static/demo/datapic/13.jpg',
+							titlePic: '../../static/common/nothing.png',
 							video: false,
 							share: false,
 							path: '深圳 龙岗',
@@ -150,13 +150,13 @@
 						},
 						// 视频
 						{
-							userPic: '../../static/demo/userpic/12.jpg',
+							userPic: '../../static/common/nothing.png',
 							userName: '哈哈',
 							sex: 1, //0 男 1女
 							age: 25,
 							isFollow: false,
 							title: '标题',
-							titlePic: '../../static/demo/datapic/13.jpg',
+							titlePic: '../../static/common/nothing.png',
 							video: {
 								lookNum: '20w',
 								long: '2: 47'
@@ -170,7 +170,7 @@
 						},
 						// 分享
 						{
-							userPic: '../../static/demo/userpic/12.jpg',
+							userPic: '../../static/common/nothing.png',
 							userName: '哈哈',
 							sex: 0, //0 男 1女
 							age: 25,
@@ -180,7 +180,7 @@
 							video: false,
 							share: {
 								title: '分享标题',
-								titlePic: '../../static/demo/datapic/14.jpg'
+								titlePic: '../../static/common/nothing.png'
 							},
 							path: '深圳 龙岗',
 							shareNum: 20,
@@ -219,13 +219,13 @@
 				this.follow.loadText = '加载中...'
 				setTimeout(() => {
 					let obj = {
-						userPic: '../../static/demo/userpic/12.jpg',
+						userPic: '../../static/common/nothing.png',
 						userName: '哈哈',
 						sex: 0, //0 男 1女
 						age: 25,
 						isFollow: false,
 						title: '标题',
-						titlePic: '../../static/demo/datapic/13.jpg',
+						titlePic: '../../static/common/nothing.png',
 						video: false,
 						share: false,
 						path: '深圳 龙岗',
@@ -260,7 +260,7 @@
 		padding: 20upx;
 
 		input {
-			border: 1upx solid;
+			// border: 1upx solid;
 			background: #f4f4f4;
 			border-radius: 10upx;
 		}

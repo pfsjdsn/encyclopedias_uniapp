@@ -1,5 +1,5 @@
 <template>
-	<view class="common_list u_f animate__animated animate__fadeInLeft animate__fast">
+	<view class="common_list u_f animate__animated animate__fadeInLeft animate__fast" style="margin:40upx 10upx;"> 
 		<view class="common_list_l">
 			<image :src="item.userPic" mode="widthFix" lazy-load></image>
 		</view>
@@ -22,10 +22,10 @@
 					<view class="common_list_play_info">{{item.video.lookNum}} 次播放 {{item.video.long}}</view>
 				</template>
 				<!-- 分享 -->
-				<view class="common_list_share u_f_ac" v-if="item.share">
+				<!-- <view class="common_list_share u_f_ac" v-if="item.share" style="border: 1upx solid green;">
 					<image :src="item.share.titlePic" mode="widthFix" lazy-load></image> 
 					<view>{{item.share.title}}</view>
-				</view>
+				</view> -->
 			</view>
 			<view class="u_f_ac u_f_jsb">
 				<view>{{item.path}}</view>

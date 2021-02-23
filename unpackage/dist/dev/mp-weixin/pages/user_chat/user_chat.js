@@ -145,7 +145,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 90));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var userChatBottom = function userChatBottom() {__webpack_require__.e(/*! require.ensure | components/user_chat/user_chat_bottom */ "components/user_chat/user_chat_bottom").then((function () {return resolve(__webpack_require__(/*! @/components/user_chat/user_chat_bottom.vue */ 296));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var userChatList = function userChatList() {__webpack_require__.e(/*! require.ensure | components/user_chat/user_chat_list */ "components/user_chat/user_chat_list").then((function () {return resolve(__webpack_require__(/*! @/components/user_chat/user_chat_list.vue */ 303));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 90));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var userChatBottom = function userChatBottom() {__webpack_require__.e(/*! require.ensure | components/user_chat/user_chat_bottom */ "components/user_chat/user_chat_bottom").then((function () {return resolve(__webpack_require__(/*! @/components/user_chat/user_chat_bottom.vue */ 289));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var userChatList = function userChatList() {__webpack_require__.e(/*! require.ensure | components/user_chat/user_chat_list */ "components/user_chat/user_chat_list").then((function () {return resolve(__webpack_require__(/*! @/components/user_chat/user_chat_list.vue */ 296));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 {
   components: {
     userChatBottom: userChatBottom,
@@ -195,16 +195,16 @@ var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 9
       var arr = [
       {
         isMe: false,
-        userPic: '../../static/demo/userpic/11.jpg',
+        userPic: '../../static/common/nothing.png',
         type: 'text',
         data: '哈哈',
         time: '1554970012' },
 
       {
         isMe: true,
-        userPic: '../../static/demo/userpic/11.jpg',
+        userPic: '../../static/common/nothing.png',
         type: 'img',
-        data: '../../static/demo/userpic/11.jpg',
+        data: '../../static/common/nothing.png',
         time: '1554970814' }];
 
 
@@ -218,7 +218,7 @@ var _time = _interopRequireDefault(__webpack_require__(/*! @/common/time.js */ 9
       var now = new Date().getTime();
       var obj = {
         isMe: true,
-        userPic: '../../static/demo/userpic/11.jpg',
+        userPic: '../../static/common/nothing.png',
         type: 'text',
         data: data,
         time: now,

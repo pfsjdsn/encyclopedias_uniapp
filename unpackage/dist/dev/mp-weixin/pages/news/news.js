@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var commonList = function commonList() {__webpack_require__.e(/*! require.ensure | components/common/common_list */ "components/common/common_list").then((function () {return resolve(__webpack_require__(/*! @/components/common/common_list.vue */ 219));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var newsNavBar = function newsNavBar() {__webpack_require__.e(/*! require.ensure | components/news/news_nav_bar */ "components/news/news_nav_bar").then((function () {return resolve(__webpack_require__(/*! @/components/news/news_nav_bar.vue */ 226));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var hotCategories = function hotCategories() {__webpack_require__.e(/*! require.ensure | components/news/hot_categories */ "components/news/hot_categories").then((function () {return resolve(__webpack_require__(/*! @/components/news/hot_categories.vue */ 233));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var topicList = function topicList() {__webpack_require__.e(/*! require.ensure | components/news/topic_list */ "components/news/topic_list").then((function () {return resolve(__webpack_require__(/*! @/components/news/topic_list.vue */ 240));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 177));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var commonList = function commonList() {__webpack_require__.e(/*! require.ensure | components/common/common_list */ "components/common/common_list").then((function () {return resolve(__webpack_require__(/*! @/components/common/common_list.vue */ 212));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var newsNavBar = function newsNavBar() {__webpack_require__.e(/*! require.ensure | components/news/news_nav_bar */ "components/news/news_nav_bar").then((function () {return resolve(__webpack_require__(/*! @/components/news/news_nav_bar.vue */ 219));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var hotCategories = function hotCategories() {__webpack_require__.e(/*! require.ensure | components/news/hot_categories */ "components/news/hot_categories").then((function () {return resolve(__webpack_require__(/*! @/components/news/hot_categories.vue */ 226));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var topicList = function topicList() {__webpack_require__.e(/*! require.ensure | components/news/topic_list */ "components/news/topic_list").then((function () {return resolve(__webpack_require__(/*! @/components/news/topic_list.vue */ 233));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 177));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -197,9 +197,9 @@ __webpack_require__.r(__webpack_exports__);
       tabIndex: 0,
       topic: {
         swiper: [
-        { src: '../../static/demo/banner1.jpg' },
-        { src: '../../static/demo/banner1.jpg' },
-        { src: '../../static/demo/banner1.jpg' }],
+        { src: '../../static/common/nothing.png' },
+        { src: '../../static/common/nothing.png' },
+        { src: '../../static/common/nothing.png' }],
 
         nav: [
         { name: '最新' },
@@ -212,21 +212,21 @@ __webpack_require__.r(__webpack_exports__);
         recent_updates_list:
         [
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
           todayNum: 5 },
 
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
           todayNum: 5 },
 
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
@@ -248,7 +248,7 @@ __webpack_require__.r(__webpack_exports__);
         list: [
         // 文字
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '哈哈',
           sex: 0, //0 男 1女
           age: 25,
@@ -265,13 +265,13 @@ __webpack_require__.r(__webpack_exports__);
 
         // 图文
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '哈哈',
           sex: 0, //0 男 1女
           age: 25,
           isFollow: false,
           title: '标题',
-          titlePic: '../../static/demo/datapic/13.jpg',
+          titlePic: '../../static/common/nothing.png',
           video: false,
           share: false,
           path: '深圳 龙岗',
@@ -282,13 +282,13 @@ __webpack_require__.r(__webpack_exports__);
 
         // 视频
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '哈哈',
           sex: 1, //0 男 1女
           age: 25,
           isFollow: false,
           title: '标题',
-          titlePic: '../../static/demo/datapic/13.jpg',
+          titlePic: '../../static/common/nothing.png',
           video: {
             lookNum: '20w',
             long: '2: 47' },
@@ -302,7 +302,7 @@ __webpack_require__.r(__webpack_exports__);
 
         // 分享
         {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '哈哈',
           sex: 0, //0 男 1女
           age: 25,
@@ -312,7 +312,7 @@ __webpack_require__.r(__webpack_exports__);
           video: false,
           share: {
             title: '分享标题',
-            titlePic: '../../static/demo/datapic/14.jpg' },
+            titlePic: '../../static/common/nothing.png' },
 
           path: '深圳 龙岗',
           shareNum: 20,
@@ -351,13 +351,13 @@ __webpack_require__.r(__webpack_exports__);
       this.follow.loadText = '加载中...';
       setTimeout(function () {
         var obj = {
-          userPic: '../../static/demo/userpic/12.jpg',
+          userPic: '../../static/common/nothing.png',
           userName: '哈哈',
           sex: 0, //0 男 1女
           age: 25,
           isFollow: false,
           title: '标题',
-          titlePic: '../../static/demo/datapic/13.jpg',
+          titlePic: '../../static/common/nothing.png',
           video: false,
           share: false,
           path: '深圳 龙岗',

@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var swiperTabHead = function swiperTabHead() {__webpack_require__.e(/*! require.ensure | components/index/swiper_tab_header */ "components/index/swiper_tab_header").then((function () {return resolve(__webpack_require__(/*! @/components/index/swiper_tab_header.vue */ 170));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var noThing = function noThing() {__webpack_require__.e(/*! require.ensure | components/common/no_thing */ "components/common/no_thing").then((function () {return resolve(__webpack_require__(/*! @/components/common/no_thing.vue */ 184));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 177));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var topicList = function topicList() {__webpack_require__.e(/*! require.ensure | components/news/topic_list */ "components/news/topic_list").then((function () {return resolve(__webpack_require__(/*! @/components/news/topic_list.vue */ 240));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var swiperTabHead = function swiperTabHead() {__webpack_require__.e(/*! require.ensure | components/index/swiper_tab_header */ "components/index/swiper_tab_header").then((function () {return resolve(__webpack_require__(/*! @/components/index/swiper_tab_header.vue */ 170));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var noThing = function noThing() {__webpack_require__.e(/*! require.ensure | components/common/no_thing */ "components/common/no_thing").then((function () {return resolve(__webpack_require__(/*! @/components/common/no_thing.vue */ 184));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var loadMore = function loadMore() {__webpack_require__.e(/*! require.ensure | components/common/load_more */ "components/common/load_more").then((function () {return resolve(__webpack_require__(/*! @/components/common/load_more.vue */ 177));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var topicList = function topicList() {__webpack_require__.e(/*! require.ensure | components/news/topic_list */ "components/news/topic_list").then((function () {return resolve(__webpack_require__(/*! @/components/news/topic_list.vue */ 233));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -185,56 +185,56 @@ __webpack_require__.r(__webpack_exports__);
       { loadText: '上拉加载更多',
         list: [
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
           todayNum: 5 },
 
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
           todayNum: 5 },
 
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
           todayNum: 5 },
 
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
           todayNum: 5 },
 
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
           todayNum: 5 },
 
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
           todayNum: 5 },
 
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
           todayNum: 5 },
 
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
@@ -245,14 +245,14 @@ __webpack_require__.r(__webpack_exports__);
       { loadText: '上拉加载更多',
         list: [
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
           todayNum: 5 },
 
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
@@ -263,14 +263,14 @@ __webpack_require__.r(__webpack_exports__);
       { loadText: '上拉加载更多',
         list: [
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
           todayNum: 5 },
 
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
@@ -281,14 +281,14 @@ __webpack_require__.r(__webpack_exports__);
       { loadText: '上拉加载更多',
         list: [
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
           todayNum: 5 },
 
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
@@ -299,14 +299,14 @@ __webpack_require__.r(__webpack_exports__);
       { loadText: '上拉加载更多',
         list: [
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
           todayNum: 5 },
 
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
@@ -317,14 +317,14 @@ __webpack_require__.r(__webpack_exports__);
       { loadText: '上拉加载更多',
         list: [
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
           todayNum: 5 },
 
         {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,
@@ -361,7 +361,7 @@ __webpack_require__.r(__webpack_exports__);
       console.log(3);
       setTimeout(function () {
         var obj = {
-          titlePic: '../../static/demo/topicpic/13.jpeg',
+          titlePic: '../../static/common/nothing.png',
           title: '话题名称',
           desc: '我是话题描述',
           totalNum: 10,

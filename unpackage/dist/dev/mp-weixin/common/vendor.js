@@ -801,7 +801,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"uni-百科","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"uni-百科","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -1920,7 +1920,7 @@ var _default = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _request = _interopRequireDefault(__webpack_require__(/*! ./request.js */ 16));
 
 
 
@@ -1992,14 +1992,36 @@ var _default = {
 
 
 
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config.js */ 13));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // demo
-var demo = function demo() {console.log(_config.default.webUrl, 'lib.js');}; // 网络监听
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config.js */ 13));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // 网络监听
 var NetWork = { // 网络状态
   isConnect: false, // 监听网络状态
   On: function On() {var _this = this; // 获取当前网络状态
-    uni.getNetworkType({ success: function success(res) {console.log('获取');console.log(JSON.stringify(res));if (res.networkType !== 'none') {_this.isConnect = true;return;}uni.showToast({ icon: "none", title: '请先连接网络' });} }); // 监听网络状态变化
-    uni.onNetworkStatusChange(function (res) {console.log('监听');console.log(JSON.stringify(res));_this.isConnect = res.isConnected;if (!res.isConnected) {uni.showToast({ icon: "none", title: '您目前处于断网状态' });}});} }; // app更新
-var Update = function Update() {};var _default = { NetWork: NetWork, Update: Update, demo: demo };exports.default = _default;
+    uni.getNetworkType({ success: function success(res) {if (res.networkType !== 'none') {_this.isConnect = true;return;}uni.showToast({ icon: "none", title: '请先连接网络' });} }); // 监听网络状态变化
+    uni.onNetworkStatusChange(function (res) {_this.isConnect = res.isConnected;if (!res.isConnected) {uni.showToast({ icon: "none", title: '您目前处于断网状态' });}});} }; // app更新
+var Update = function Update() {var showToast = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;};var _default = { NetWork: NetWork, Update: Update };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
@@ -7638,7 +7660,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"uni-百科","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_NAME":"uni-百科","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -7659,14 +7681,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"uni-百科","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"uni-百科","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"uni-百科","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"uni-百科","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -7752,7 +7774,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"uni-百科","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"uni-百科","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -8190,7 +8212,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 336:
+/***/ 329:
 /*!**********************************************************************************************!*\
   !*** E:/我的项目/uni-qiushi/uni_encyclopedias/components/mpvue-citypicker/city-data/province.js ***!
   \**********************************************************************************************/
@@ -8340,7 +8362,7 @@ provinceData;exports.default = _default;
 
 /***/ }),
 
-/***/ 337:
+/***/ 330:
 /*!******************************************************************************************!*\
   !*** E:/我的项目/uni-qiushi/uni_encyclopedias/components/mpvue-citypicker/city-data/city.js ***!
   \******************************************************************************************/
@@ -9854,7 +9876,7 @@ cityData;exports.default = _default;
 
 /***/ }),
 
-/***/ 338:
+/***/ 331:
 /*!******************************************************************************************!*\
   !*** E:/我的项目/uni-qiushi/uni_encyclopedias/components/mpvue-citypicker/city-data/area.js ***!
   \******************************************************************************************/
@@ -22407,18 +22429,7 @@ areaData;exports.default = _default;
 
 /***/ }),
 
-/***/ 4:
-/*!*******************************************************!*\
-  !*** E:/我的项目/uni-qiushi/uni_encyclopedias/pages.json ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ 402:
+/***/ 395:
 /*!**************************************************************************!*\
   !*** E:/我的项目/uni-qiushi/uni_encyclopedias/components/uni-icons/icons.js ***!
   \**************************************************************************/
@@ -22557,6 +22568,17 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   "cloud-download-filled": "\uE8E9",
   "headphones": "\uE8BF",
   "shop": "\uE609" };exports.default = _default;
+
+/***/ }),
+
+/***/ 4:
+/*!*******************************************************!*\
+  !*** E:/我的项目/uni-qiushi/uni_encyclopedias/pages.json ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 

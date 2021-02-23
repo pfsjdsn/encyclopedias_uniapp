@@ -1,0 +1,11 @@
+.user_set_about_t {
+  padding: 40rpx 0;
+}
+.user_set_about_t image {
+  margin: 50rpx 0 30rpx 0;
+  word-spacing: 65%;
+}
+.user_set_about_t > view {
+  color: #ccc;
+}
+

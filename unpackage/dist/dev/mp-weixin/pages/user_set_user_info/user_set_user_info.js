@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var mpvueCityPicker = function mpvueCityPicker() {Promise.all(/*! require.ensure | components/mpvue-citypicker/mpvueCityPicker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/mpvue-citypicker/mpvueCityPicker")]).then((function () {return resolve(__webpack_require__(/*! ../../components/mpvue-citypicker/mpvueCityPicker.vue */ 331));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var mpvueCityPicker = function mpvueCityPicker() {Promise.all(/*! require.ensure | components/mpvue-citypicker/mpvueCityPicker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/mpvue-citypicker/mpvueCityPicker")]).then((function () {return resolve(__webpack_require__(/*! ../../components/mpvue-citypicker/mpvueCityPicker.vue */ 324));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 
 
 
@@ -209,7 +209,7 @@ var job = ['秘密', 'IT', '老师'];var _default =
       emotion: '未婚',
       job: 'IT',
       birthday: '1987-02-07',
-      userPic: '../../static/demo/userpic/11.jpg',
+      userPic: '../../static/common/nothing.png',
       pickerValueDefault: [0, 0, 1],
       pickerText: '广东省-深圳市-南山区' };
 

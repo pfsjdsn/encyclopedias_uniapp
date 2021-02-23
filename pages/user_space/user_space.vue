@@ -58,7 +58,7 @@
 						loadText: '上拉加载更多',
 						list: [
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '哈哈',
 								sex: 0, //0 男 1女
 								age: 25,
@@ -73,7 +73,7 @@
 								goodNum: 20
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '哈哈',
 								sex: 0, //0 男 1女
 								age: 25,
@@ -88,7 +88,7 @@
 								goodNum: 20
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '哈哈',
 								sex: 0, //0 男 1女
 								age: 25,
@@ -103,7 +103,7 @@
 								goodNum: 20
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '哈哈',
 								sex: 0, //0 男 1女
 								age: 25,
@@ -123,7 +123,7 @@
 						loadText: '上拉加载更多',
 						list: [
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '哈哈',
 								sex: 0, //0 男 1女
 								age: 25,
@@ -138,7 +138,7 @@
 								goodNum: 20
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '哈哈',
 								sex: 0, //0 男 1女
 								age: 25,
@@ -153,7 +153,7 @@
 								goodNum: 20
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '哈哈',
 								sex: 0, //0 男 1女
 								age: 25,
@@ -168,7 +168,7 @@
 								goodNum: 20
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '哈哈',
 								sex: 0, //0 男 1女
 								age: 25,
@@ -199,7 +199,7 @@
 				userInfo: {
 					newBgImg: '',
 					bgImg: 1,
-					userPic: '../../static/demo/userpic/11.jpg',
+					userPic: '../../static/common/nothing.png',
 					userName: '昵称',
 					sex: 0,
 					age: 20,
@@ -212,6 +212,9 @@
 					emotion: '已婚',
 				}
 			}
+		},
+		onLoad(option) {
+			this.userInfo.userName = option.userName
 		},
 		// 触底事件
 		onReachBottom() {
@@ -244,13 +247,13 @@
 				this.tabList[this.tabIndex].loadText = '加载中...'
 				setTimeout(() => {
 					let obj = {
-						userPic: '../../static/demo/userpic/12.jpg',
+						userPic: '../../static/common/nothing.png',
 						userName: '哈哈',
 						sex: 0, //0 男 1女
 						age: 25,
 						isFollow: false,
 						title: '标题',
-						titlePic: '../../static/demo/datapic/13.jpg',
+						titlePic: '../../static/common/nothing.png',
 						video: false,
 						share: false,
 						path: '深圳 龙岗',

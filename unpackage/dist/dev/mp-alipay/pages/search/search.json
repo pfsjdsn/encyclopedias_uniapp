@@ -1,0 +1,8 @@
+{
+  "pullRefresh": true,
+  "usingComponents": {
+    "index-list": "/components/index/index_list",
+    "no-thing": "/components/common/no_thing",
+    "load-more": "/components/common/load_more"
+  }
+}

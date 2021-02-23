@@ -53,74 +53,56 @@
 					{	loadText: '上拉加载更多',
 						list: [
 							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
+							titlePic: '../../static/common/nothing.png',
 							title: '话题名称',
 							desc: '我是话题描述',
 							totalNum: 10,
 							todayNum: 5,
 							},
 							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
+							titlePic: '../../static/common/nothing.png',
 							title: '话题名称',
 							desc: '我是话题描述',
 							totalNum: 10,
 							todayNum: 5,
 							},
 							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
+							titlePic: '../../static/common/nothing.png',
 							title: '话题名称',
 							desc: '我是话题描述',
 							totalNum: 10,
 							todayNum: 5,
 							},
 							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
+							titlePic: '../../static/common/nothing.png',
 							title: '话题名称',
 							desc: '我是话题描述',
 							totalNum: 10,
 							todayNum: 5,
 							},
 							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
+							titlePic: '../../static/common/nothing.png',
 							title: '话题名称',
 							desc: '我是话题描述',
 							totalNum: 10,
 							todayNum: 5,
 							},
 							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
+							titlePic: '../../static/common/nothing.png',
 							title: '话题名称',
 							desc: '我是话题描述',
 							totalNum: 10,
 							todayNum: 5,
 							},
 							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
+							titlePic: '../../static/common/nothing.png',
 							title: '话题名称',
 							desc: '我是话题描述',
 							totalNum: 10,
 							todayNum: 5,
 							},
 							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
-							title: '话题名称',
-							desc: '我是话题描述',
-							totalNum: 10,
-							todayNum: 5,
-							},
-						]
-					},
-					{	loadText: '上拉加载更多',
-						list: [
-							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
-							title: '话题名称',
-							desc: '我是话题描述',
-							totalNum: 10,
-							todayNum: 5,
-							},
-							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
+							titlePic: '../../static/common/nothing.png',
 							title: '话题名称',
 							desc: '我是话题描述',
 							totalNum: 10,
@@ -131,32 +113,14 @@
 					{	loadText: '上拉加载更多',
 						list: [
 							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
+							titlePic: '../../static/common/nothing.png',
 							title: '话题名称',
 							desc: '我是话题描述',
 							totalNum: 10,
 							todayNum: 5,
 							},
 							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
-							title: '话题名称',
-							desc: '我是话题描述',
-							totalNum: 10,
-							todayNum: 5,
-							},
-						]
-					},
-					{	loadText: '上拉加载更多',
-						list: [
-							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
-							title: '话题名称',
-							desc: '我是话题描述',
-							totalNum: 10,
-							todayNum: 5,
-							},
-							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
+							titlePic: '../../static/common/nothing.png',
 							title: '话题名称',
 							desc: '我是话题描述',
 							totalNum: 10,
@@ -167,14 +131,14 @@
 					{	loadText: '上拉加载更多',
 						list: [
 							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
+							titlePic: '../../static/common/nothing.png',
 							title: '话题名称',
 							desc: '我是话题描述',
 							totalNum: 10,
 							todayNum: 5,
 							},
 							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
+							titlePic: '../../static/common/nothing.png',
 							title: '话题名称',
 							desc: '我是话题描述',
 							totalNum: 10,
@@ -185,14 +149,50 @@
 					{	loadText: '上拉加载更多',
 						list: [
 							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
+							titlePic: '../../static/common/nothing.png',
 							title: '话题名称',
 							desc: '我是话题描述',
 							totalNum: 10,
 							todayNum: 5,
 							},
 							{
-							titlePic: '../../static/demo/topicpic/13.jpeg',
+							titlePic: '../../static/common/nothing.png',
+							title: '话题名称',
+							desc: '我是话题描述',
+							totalNum: 10,
+							todayNum: 5,
+							},
+						]
+					},
+					{	loadText: '上拉加载更多',
+						list: [
+							{
+							titlePic: '../../static/common/nothing.png',
+							title: '话题名称',
+							desc: '我是话题描述',
+							totalNum: 10,
+							todayNum: 5,
+							},
+							{
+							titlePic: '../../static/common/nothing.png',
+							title: '话题名称',
+							desc: '我是话题描述',
+							totalNum: 10,
+							todayNum: 5,
+							},
+						]
+					},
+					{	loadText: '上拉加载更多',
+						list: [
+							{
+							titlePic: '../../static/common/nothing.png',
+							title: '话题名称',
+							desc: '我是话题描述',
+							totalNum: 10,
+							todayNum: 5,
+							},
+							{
+							titlePic: '../../static/common/nothing.png',
 							title: '话题名称',
 							desc: '我是话题描述',
 							totalNum: 10,
@@ -229,7 +229,7 @@
 				console.log(3)
 				setTimeout(() => {
 					let obj = {
-						titlePic: '../../static/demo/topicpic/13.jpeg',
+						titlePic: '../../static/common/nothing.png',
 						title: '话题名称',
 						desc: '我是话题描述',
 						totalNum: 10,

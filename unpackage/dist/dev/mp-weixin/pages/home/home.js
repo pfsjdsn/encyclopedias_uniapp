@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var homeListItem = function homeListItem() {__webpack_require__.e(/*! require.ensure | components/home/home_list_item */ "components/home/home_list_item").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_list_item.vue */ 191));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var homeInfo = function homeInfo() {__webpack_require__.e(/*! require.ensure | components/home/home_info */ "components/home/home_info").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_info.vue */ 198));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var otherLogin = function otherLogin() {__webpack_require__.e(/*! require.ensure | components/home/other_login */ "components/home/other_login").then((function () {return resolve(__webpack_require__(/*! @/components/home/other_login.vue */ 205));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var homeData = function homeData() {__webpack_require__.e(/*! require.ensure | components/home/home_data */ "components/home/home_data").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_data.vue */ 212));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var homeListItem = function homeListItem() {__webpack_require__.e(/*! require.ensure | components/home/home_list_item */ "components/home/home_list_item").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_list_item.vue */ 191));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var homeInfo = function homeInfo() {__webpack_require__.e(/*! require.ensure | components/home/home_info */ "components/home/home_info").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_info.vue */ 198));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var homeData = function homeData() {__webpack_require__.e(/*! require.ensure | components/home/home_data */ "components/home/home_data").then((function () {return resolve(__webpack_require__(/*! @/components/home/home_data.vue */ 205));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -172,7 +172,7 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     homeListItem: homeListItem,
     homeInfo: homeInfo,
-    otherLogin: otherLogin,
+    // otherLogin,
     homeData: homeData },
 
   data: function data() {
@@ -185,8 +185,8 @@ __webpack_require__.r(__webpack_exports__);
       { name: '收藏', num: 0 }],
 
       homeInfo: {
-        userPic: '../../static/demo/userpic/11.jpg',
-        userName: '哈哈',
+        userPic: '../../static/common/nothing.png',
+        userName: '哈哈111',
         totalNum: 0,
         todayNum: 0 },
 

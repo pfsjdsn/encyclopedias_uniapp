@@ -12,7 +12,7 @@
 			<template v-if="!status">
 				<input type="text" v-model="userName" class="uni-input common_input" placeholder="昵称/手机号/邮箱" />
 				<view class="login_input_box">
-					<input type="text" v-model="password" class="uni-input common_input forget_input" placeholder="请输入密码" />
+					<input type="password" v-model="password" class="uni-input common_input forget_input" placeholder="请输入密码" />
 					<view class="forget u_f_ajc">忘记密码</view>
 				</view>
 			</template>
@@ -40,7 +40,7 @@
 		</view>
 		<!-- 第三方登录  -->
 		<view class="other_login_title u_f_ajc login_padding login_font_color">第三方登录</view>
-		<otherLogin></otherLogin>
+		<!-- <otherLogin></otherLogin> -->
 		<!-- 协议 -->
 		<view class="login_rule u_f_ajc login_padding login_font_color">
 			注册即代表你同意<view>《XXX协议》</view>
@@ -50,11 +50,11 @@
 
 <script>
 	import uniStatusBar from '@/components/uni-status-bar/uni-status-bar.vue';
-	import otherLogin from '@/components/home/other_login.vue';
+	// import otherLogin from '@/components/home/other_login.vue';
 	export default {
 		components: {
 			uniStatusBar,
-			otherLogin
+			// otherLogin
 		},
 		data() {
 			return {
@@ -138,8 +138,14 @@
 			},
 			// 提交登录 
 			submit() {
+				let pages = getCurrentPages();  //获取所有页面栈实例列表
+				let nowPage = pages[ pages.length - 1];  //当前页页面实例
+				let prevPage = pages[ pages.length - 2 ];  //上一页页面实例
 				// 账号密码登录
 				if(!this.status) {
+					prevPage.$vm.isLogin = true;   //修改上一页data里面的isLogin
+					prevPage.$vm.homeInfo.userName = this.userName
+					this.back()
 					return;
 				}
 				// 验证码登录 
@@ -152,9 +158,12 @@
 					return;
 				}
 				console.log('提交登录')
+				prevPage.$vm.isLogin = true;   //修改上一页data里面的isLogin
+				prevPage.$vm.homeInfo.userName = this.phone
+				this.back()
 			},
 			// 返回上一步
-			back() {
+			back() { 
 				console.log('返回上一步	')
 				uni.navigateBack({
 					delta:1

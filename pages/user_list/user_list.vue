@@ -61,75 +61,56 @@
 						loadText: '上拉加载更多',
 						list: [
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								age: 20,
 								sex: 0,
 								isFollow: true
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								age: 20,
 								sex: 1,
 								isFollow: false
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								age: 20,
 								sex: 0,
 								isFollow: true
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								age: 20,
 								sex: 1,
 								isFollow: false
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								age: 20,
 								sex: 0,
 								isFollow: true
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								age: 20,
 								sex: 1,
 								isFollow: false
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								age: 20,
 								sex: 0,
 								isFollow: true
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '昵称',
-								age: 20,
-								sex: 1,
-								isFollow: false
-							}
-						]
-					},
-					{
-						loadText: '上拉加载更多',
-						list: [
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
-								userName: '昵称',
-								age: 20,
-								sex: 0,
-								isFollow: true
-							},
-							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								age: 20,
 								sex: 1,
@@ -141,14 +122,33 @@
 						loadText: '上拉加载更多',
 						list: [
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								age: 20,
 								sex: 0,
 								isFollow: true
 							},
 							{
-								userPic: '../../static/demo/userpic/12.jpg',
+								userPic: '../../static/common/nothing.png',
+								userName: '昵称',
+								age: 20,
+								sex: 1,
+								isFollow: false
+							}
+						]
+					},
+					{
+						loadText: '上拉加载更多',
+						list: [
+							{
+								userPic: '../../static/common/nothing.png',
+								userName: '昵称',
+								age: 20,
+								sex: 0,
+								isFollow: true
+							},
+							{
+								userPic: '../../static/common/nothing.png',
 								userName: '昵称',
 								age: 20,
 								sex: 1,
@@ -184,7 +184,7 @@
 				this.newsList[index].loadText = '加载中...'
 				setTimeout(() => {
 					let obj = {
-						userPic: '../../static/demo/userpic/12.jpg',
+						userPic: '../../static/common/nothing.png',
 						userName: 'aaaaaaaaaaa',
 						age: 20,
 						sex: 0,

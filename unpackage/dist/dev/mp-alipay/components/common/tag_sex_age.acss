@@ -1,0 +1,13 @@
+.age.data-v-673f39d8 {
+  background: #007aff;
+  color: #fff;
+  font-size: 24rpx;
+  padding: 5rpx 10rpx;
+  margin: 0 0 0 10rpx;
+  border-radius: 20rpx;
+  line-height: 26rpx;
+}
+.iconnv2.data-v-673f39d8 {
+  background: #ff698d !important;
+}
+

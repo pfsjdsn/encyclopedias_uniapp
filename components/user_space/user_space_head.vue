@@ -70,7 +70,7 @@
 			top: 150upx;
 			>image {
 				width: 150upx;
-				height: 150upx;
+				height: 150upx!important;
 				border-radius: 100%;
 			}
 			>view:first-of-type {

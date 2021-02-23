@@ -1,0 +1,1 @@
+<view class="body"><block a:for="{{list}}" a:for-item="item" a:for-index="index" a:key="index"><home-list-item vue-id="{{'144d8756-1-'+index}}" item="{{item}}" index="{{index}}" onVueInit="__l"></home-list-item></block><button class="user_set_btn" type="primary">退出登录</button></view>

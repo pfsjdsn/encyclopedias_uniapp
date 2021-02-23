@@ -139,7 +139,7 @@ var _default =
   methods: {
     toUserSpace: function toUserSpace() {
       uni.navigateTo({
-        url: '../../pages/user_space/user_space' });
+        url: '../../pages/user_space/user_space?userName=' + this.homeInfo.userName });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
